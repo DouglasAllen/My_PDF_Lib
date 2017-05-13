@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_04 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./file1.html">file1</a>
+  
+    <li><a href="./file1_tmp.html">file1.tmp</a>
+  
+    <li><a href="./file1_txt.html">file1</a>
+  
+    <li><a href="./file2.html">file2</a>
+  
+    <li><a href="./file2_txt.html">file2</a>
+  
+    <li><a href="./game_sav.html">game.sav</a>
+  
+    <li><a href="./logfile_log.html">logfile.log</a>
+  
+    <li><a href="./new-inventory_txt.html">new-inventory</a>
+  
+    <li><a href="./old-inventory_txt.html">old-inventory</a>
+  
+    <li><a href="./oliver_txt.html">oliver</a>
+  
+    <li><a href="./parallel_track_txt.html">parallel_track</a>
+  
+    <li><a href="./plain_text_txt.html">plain_text</a>
+  
+    <li><a href="./plain_text2_txt.html">plain_text2</a>
+  
+    <li><a href="./testfile.html">testfile</a>
+  
+    <li><a href="./text_txt.html">text</a>
+  
+    <li><a href="./week_01_txt.html">week_01</a>
+  
+    <li><a href="./week_02_txt.html">week_02</a>
+  
+    <li><a href="./week_03_txt.html">week_03</a>
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_04.txt">
+
+<p>Try and write your code with whatever Ruby we have learned so far.</p>
+
+<p>Exercise1. Write a class called Dog, that has name as an instance variable
+and the following methods:</p>
+
+<p>bark(), eat(), chase_cat() I shall create the Dog object as follows: d =
+Dog.new(&#39;Leo&#39;)</p>
+
+<p>Exercise1A (optional). Here&#39;s an additional challenge for all of you
+who already finished Exercise1:</p>
+
+<pre>Write a method teach_trick which allows you to teach tricks to specific instances of the dog class like this:</pre>
+
+<p>d = Dog.new(&#39;Lassie&#39;) d.teach_trick(:dance) { “#{@name} is
+dancing!” } puts d.dance d.teach_trick(:poo) { “#{@name} is a smelly
+doggy!” } puts d.poo puts d2=Dog.new(&#39;Fido&#39;) puts d2.dance
+d2.teach_trick(:laugh) { “#{@name} finds this hilarious!” } puts d2.laugh
+puts d.laugh puts d3=Dog.new(&#39;Stimpy&#39;) puts d3.dance puts d3.laugh
+# &gt;&gt; Lassie is dancing! # &gt;&gt; Lassie is a smelly doggy! #
+&gt;&gt; # &gt;&gt; Fido doesn&#39;t know how to dance! # &gt;&gt; Fido
+finds this hilarious! # &gt;&gt; Lassie doesn&#39;t know how to laugh! #
+&gt;&gt; # &gt;&gt; Stimpy doesn&#39;t know how to dance! # &gt;&gt; Stimpy
+doesn&#39;t know how to laugh! You will also have to deal with the fact
+that people may get confused and will tell a certain dog  to perform a
+trick it hasn&#39;t learned yet…</p>
+
+<p>Exercise2. Write a <a href="Rectangle.html">Rectangle</a> class. I shall
+use your class as follows:</p>
+
+<p>r = <a href="Rectangle.html#method-c-new">Rectangle.new</a>(23.45, 34.67)
+puts “Area is = #{r.area}” puts “Perimeter is = #{r.perimeter}”</p>
+
+<p>Exercise3. Call this program (p026zdeafgm2.rb) - Modify your Deaf Grandma
+program (Week 3 / Exercise6): What if grandma doesn&#39;t want you to
+leave? When you shout BYE, she could pretend not to hear you. Change your
+previous program so that you have to shout BYE three times in a row. Make
+sure to test your program: if you shout BYE three times, but not in a row,
+you should still be talking to grandma. You must shout BYE three separate
+times. If you shout BYEBYEBYE or BYE BYE BYE, grandma should pretend not to
+hear you  (and not count it as a BYE). This program does not solve this
+exercise.  But now that we have read a little bit about Procs and lambda, I
+thought I would show this program…</p>
+
+<p>def intro</p>
+
+<pre class="ruby"><span class="ruby-value">&lt;&lt;-EOS
+Granny is having a hard time hearing lately, as her Dura-Gizers are dead for her hearing aids
+So you will want to yell (ALL CAPS) to have her hear you.
+EOS</span>
+</pre>
+
+<p>end granny = -&gt;(what_was_said, years_remembered = [*(1930..1950)]) do</p>
+
+<pre class="ruby"><span class="ruby-identifier">what_was_said</span>.<span class="ruby-identifier">upcase</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">what_was_said</span> <span class="ruby-operator">?</span>
+  <span class="ruby-node">&quot;No, Sonny.  At least not since #{years_remembered.sample}.&quot;</span> <span class="ruby-operator">:</span>
+  <span class="ruby-string">&quot;HUH?  SPEAK UP SONNY!&quot;</span>
+</pre>
+
+<p>end puts intro until &#39;BYE&#39; == sonny_says = gets.chomp</p>
+
+<pre class="ruby"><span class="ruby-identifier">puts</span> <span class="ruby-identifier">granny</span>[<span class="ruby-identifier">sonny_says</span>] <span class="ruby-keyword">unless</span> <span class="ruby-identifier">sonny_says</span>.<span class="ruby-identifier">empty?</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Say something to Granny:&quot;</span>
+</pre>
+
+<p>end From Chris Pine&#39;s Book.</p>
+
+<p>Exercise4. Write a Ruby program (call it p028swapcontents.rb) to do the
+following.</p>
+
+<pre>Take two text files say A and B. The program should swap the contents of A and B.
+That is after the program is executed, A should contain B&#39;s contents and B should contains A&#39;s contents.</pre>
+
+<p>Exercise5. Difficulty level: MEDIUM Write a one-line Ruby script that
+displays on the screen all the files in the current folder  as well as
+everything in all its sub folders, in sorted order.</p>
+
+<p>Make use of Dir.glob method as follows:
+Dir.glob(&#39;*<strong>/</strong>&#39;) Name this program inventory.rb.</p>
+
+<pre>Create an inventory file by typing the following at the command prompt:</pre>
+
+<p>ruby inventory.rb &gt; <a
+href="old-inventory_txt.html">old-inventory.txt</a></p>
+
+<p>After a few days, when some files would have been added / deleted from this
+folder, run the program again like: ruby inventory.rb &gt; <a
+href="new-inventory_txt.html">new-inventory.txt</a></p>
+
+<p>Now, write another Ruby script that displays on the screen all the files
+that have been added in this folder since the time</p>
+
+<pre>the old-inventory.txt was created.</pre>
+
+<p>Discuss these exercises in the Week 4 forum.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

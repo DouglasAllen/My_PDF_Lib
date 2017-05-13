@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-decimal_to_strf">#decimal_to_strf</a>
+    
+    <li ><a href="#method-i-divide">#divide</a>
+    
+    <li ><a href="#method-i-inverse">#inverse</a>
+    
+    <li ><a href="#method-i-raise_and_rescue">#raise_and_rescue</a>
+    
+    <li ><a href="#method-i-raise_exception">#raise_exception</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-decimal_to_strf" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">decimal_to_strf</span><span
+            class="method-args">(time_in)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>my_time_conversion.rb This method will convert hours decimal into a Time
+object and let you see H:M:S format</p>
+          
+          
+
+          
+          <div class="method-source-code" id="decimal_to_strf-source">
+            <pre><span class="ruby-comment"># File Ruby_Time_Class/my_time_conversion.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">decimal_to_strf</span>(<span class="ruby-identifier">time_in</span>)
+  <span class="ruby-identifier">t</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>
+  <span class="ruby-identifier">year</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-identifier">month</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">month</span>
+  <span class="ruby-identifier">day</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">day</span>
+  <span class="ruby-identifier">hours</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">time_in</span>)
+  <span class="ruby-identifier">decimal_minutes</span> = (<span class="ruby-identifier">time_in</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">hours</span>) <span class="ruby-operator">*</span> <span class="ruby-value">60.0</span>
+  <span class="ruby-identifier">minutes</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">decimal_minutes</span>)
+  <span class="ruby-identifier">decimal_seconds</span> = (<span class="ruby-identifier">decimal_minutes</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">minutes</span>) <span class="ruby-operator">*</span> <span class="ruby-value">60.0</span>
+  <span class="ruby-identifier">seconds</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">decimal_seconds</span>)
+  <span class="ruby-identifier">my_time</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">gm</span>(<span class="ruby-identifier">year</span>, <span class="ruby-identifier">month</span>, <span class="ruby-identifier">day</span>, <span class="ruby-identifier">hours</span>, <span class="ruby-identifier">minutes</span>, <span class="ruby-identifier">seconds</span>)  
+<span class="ruby-comment">#  my_time.strftime(&quot;%H:%M:%S&quot;)</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-divide" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">divide</span><span
+            class="method-args">(numerator, denominator)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="divide-source">
+            <pre><span class="ruby-comment"># File Ruby_Logging/logex.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">divide</span>(<span class="ruby-identifier">numerator</span>, <span class="ruby-identifier">denominator</span>)  
+<span class="ruby-comment">#  $LOG.debug(&quot;Numerator: #{numerator}, denominator #{denominator}&quot;)</span>
+  <span class="ruby-identifier">$LOG</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span><span class="ruby-operator">::</span><span class="ruby-constant">ERROR</span>
+  <span class="ruby-keyword">begin</span>  
+    <span class="ruby-identifier">result</span> = <span class="ruby-identifier">numerator</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">denominator</span>  
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>  
+    <span class="ruby-identifier">$LOG</span>.<span class="ruby-identifier">error</span> <span class="ruby-node">&quot;Error in division!: #{e}&quot;</span>  
+    <span class="ruby-identifier">result</span> = <span class="ruby-keyword">nil</span>  
+  <span class="ruby-keyword">end</span>  
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-inverse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">inverse</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>p044inverse.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="inverse-source">
+            <pre><span class="ruby-comment"># File Ruby_Exceptions/Raising_An_Exception/p044inverse.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">inverse</span>(<span class="ruby-identifier">x</span>)  
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&#39;Argument is not numeric&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Numeric</span>  
+  <span class="ruby-value">1.0</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">x</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-raise_and_rescue" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">raise_and_rescue</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>p045handexcp.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="raise_and_rescue-source">
+            <pre><span class="ruby-comment"># File Ruby_Exceptions/Handling_an_Exception/p045handexcp.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">raise_and_rescue</span>  
+  <span class="ruby-keyword">begin</span>  
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I am before the raise.&#39;</span>  
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&#39;An error has occured.&#39;</span>  
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I am after the raise.&#39;</span>  
+  <span class="ruby-keyword">rescue</span>  
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I am rescued.&#39;</span>  
+  <span class="ruby-keyword">end</span>  
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I am after the begin block.&#39;</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-raise_exception" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">raise_exception</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>p043raise.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="raise_exception-source">
+            <pre><span class="ruby-comment"># File Ruby_Exceptions/Raising_An_Exception/p043raise.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">raise_exception</span>  
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I am before the raise.&#39;</span>  
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&#39;An error has occured&#39;</span>  
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I am after the raise&#39;</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

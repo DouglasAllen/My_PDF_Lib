@@ -1,0 +1,98 @@
+Final Week Tutorial
+
+Before you begin: 
+First complete: Weeks 1 to 6
+
+
+Final Week:
+
+a. You need to read through the following pages. 
+While doing so, please make a note of all your doubts, queries, questions, clarifications and after you have 
+completed all the pages, post these on the forum here. 
+There may be some questions that relate to something that has not been mentioned or discussed by me here; 
+you could post the same too.
+
+Duck Typing
+Ruby Syntactic Sugar
+Mutable and Immutable Objects
+Freezing Objects
+frozen?
+Object Serialization
+Modules/Mixins
+Self
+Top level context
+Self inside class and module definitions
+Self in instance method definitions
+Self in singleton-method and class-method definitions
+Constants
+
+b. Some of the important points to remember after you have read through the above pages are:
+
+In Ruby, we rely less on the type (or class) of an object and more on its capabilities. 
+Hence, Duck Typing means an object type is defined by what it can do, not by what it is.
+Duck Typing refers to the tendency of Ruby to be less concerned with the class of an object and more 
+concerned with what methods can be called on it and what operations can be performed on it.
+
+In Ruby, we would use respond_to? or might simply pass an object to a method and know that an exception 
+will be raised if it is used inappropriately.
+
+Syntactic sugar refer to special rules that let you write your code in a way that doesn't correspond to 
+the normal rules but that is easier to remember how to do and looks better.
+
+Ruby allows you to define methods that end with an equal sign (=)
+
+Mutable objects are objects whose state can change.
+Immutable objects are objects whose state never changes after creation.
+Mutability is a property of an instance, not of an entire class. 
+Any instance can become immutable by calling freeze.
+The freeze method in class Object prevents you from changing an object, effectively turning an object into a constant. 
+After we freeze an object, an attempt to modify it results in TypeError.
+freeze operates on an object reference, not on a variable. 
+This means that any operation resulting in a new object will work.
+A method frozen? tells you whether an object is frozen or not.
+
+Ruby Modules are similar to classes in that they hold a collection of methods, constants, 
+and other module and class definitions. 
+Unlike classes, you cannot create objects based on modules; instead, you specify that you want the 
+functionality of a particular module to be added to the functionality of a class, or of a specific object.
+Modules serve two purposes: First they act as namespace, letting you define methods whose names will not 
+clash with those defined elsewhere. 
+Second, they allow you to share functionality between classes - if a class mixes in a module, 
+that module's instance methods become available as if they had been defined in the class. 
+They get mixed in.
+
+SYNTAX OF require/load VS. SYNTAX OF include - You may have noticed that when you use require or load, 
+you put the name of the item you're requiring or loading in quotation marks, but with include, you don't. 
+require and load take strings as their arguments, whereas include takes the name of a module, in the form of a constant. 
+The requirements to require and load are usually literal strings (in quotation marks), 
+but a string in a variable will also work.
+
+The main difference between inheriting from a class and mixing in a module is that you can mix in more than one module. 
+No class can inherit from more than one class.
+Class names tend to be nouns, while module names are often adjectives (like Stack versus Stacklike).
+At every point when your program is running, there is one and only one self - the current or default object 
+accessible to you in your program.
+Please note the rules given for self in the Self related page.
+Thus self (current object) is the default receiver of method calls and self (current object) 
+is where instance variables are found.
+
+
+
+Java features the ability to serialize objects, letting you store them somewhere and reconstitute them when needed. 
+Ruby calls this kind of serialization marshaling.
+Marshal.dump is used to save a serialized version of an object.
+Marshal.load is used to read in from a serialized object.
+A Ruby constant is a reference to an object.
+Although constants should not be changed, you can modify the internal states of the objects they reference.
+Remember the rules for constants.
+
+
+
+c. Exercises:
+
+Please complete the last week exercises and discuss in the last week forum.
+
+d. Quiz:
+Please take the quiz after you have completed the last week. 
+All the questions are either of multiple-choice and/or true/false and based on what you have learned in this week. 
+You have only 2 attempts to complete the quiz. Grades will be allotted for the quiz. 

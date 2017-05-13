@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class GameBoard - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-check_yourself">#check_yourself</a>
+    
+    <li ><a href="#method-i-display_result">#display_result</a>
+    
+    <li ><a href="#method-i-get_result">#get_result</a>
+    
+    <li ><a href="#method-i-increment_hits">#increment_hits</a>
+    
+    <li ><a href="#method-i-set_locations_cells">#set_locations_cells</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-GameBoard">
+  <h1 id="class-GameBoard" class="class">
+    class GameBoard
+  </h1>
+
+  <section class="description">
+    
+<p>gameboard.rb</p>
+
+<p>Note:</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Use only the features we have learned so far, in Ruby.</p>
+</li><li>
+<p>You must design the <a href="GameBoard.html">GameBoard</a> class.</p>
+</li><li>
+<p>The testgameboard.rb program uses your <a
+href="GameBoard.html">GameBoard</a> class</p>
+</li></ol>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-check_yourself" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">check_yourself</span><span
+            class="method-args">(user_guess)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="check_yourself-source">
+            <pre><span class="ruby-comment"># File gameboard.rb, line 12</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">check_yourself</span>(<span class="ruby-identifier">user_guess</span>)
+    
+    <span class="ruby-comment"># check for guesses already made.</span>
+    <span class="ruby-ivar">@guesses</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">user_guess</span>.<span class="ruby-identifier">to_i</span>) <span class="ruby-operator">?</span> 
+    <span class="ruby-ivar">@result</span> = <span class="ruby-string">&quot;Miss&quot;</span> <span class="ruby-operator">:</span> 
+    <span class="ruby-identifier">get_result</span>(<span class="ruby-identifier">user_guess</span>)      
+    <span class="ruby-ivar">@guesses</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">user_guess</span>.<span class="ruby-identifier">to_i</span>
+    <span class="ruby-comment"># any results gets checked and displayed</span>
+<span class="ruby-comment">#    increment_hits(@result)</span>
+    <span class="ruby-ivar">@result</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;Hit&#39;</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@no_of_hits</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span> 
+    <span class="ruby-identifier">display_result</span>(<span class="ruby-ivar">@result</span>)
+    <span class="ruby-comment"># clear result string</span>
+    <span class="ruby-ivar">@result</span> = <span class="ruby-string">&#39;&#39;</span> 
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@no_of_hits</span> <span class="ruby-operator">==</span> <span class="ruby-value">3</span>
+      <span class="ruby-identifier">display_result</span>(<span class="ruby-string">&#39;End&#39;</span>)
+      <span class="ruby-string">&#39;kill&#39;</span>
+    <span class="ruby-keyword">end</span>        
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-display_result" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">display_result</span><span
+            class="method-args">(result)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>def <a
+href="GameBoard.html#method-i-increment_hits">#increment_hits</a>(result)</p>
+
+<pre class="ruby"><span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;Hit&#39;</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">no_of_hits</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+</pre>
+
+<p>end</p>
+          
+          
+
+          
+          <div class="method-source-code" id="display_result-source">
+            <pre><span class="ruby-comment"># File gameboard.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">display_result</span>(<span class="ruby-identifier">result</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">result</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_result" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_result</span><span
+            class="method-args">(user_guess)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_result-source">
+            <pre><span class="ruby-comment"># File gameboard.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_result</span>(<span class="ruby-identifier">user_guess</span>)
+  <span class="ruby-ivar">@locations</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">user_guess</span>.<span class="ruby-identifier">to_i</span>) <span class="ruby-operator">?</span> 
+  <span class="ruby-ivar">@result</span> = <span class="ruby-string">&#39;Hit&#39;</span> <span class="ruby-operator">:</span> 
+  <span class="ruby-ivar">@result</span> = <span class="ruby-string">&#39;Miss&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-increment_hits" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">increment_hits</span><span
+            class="method-args">(result)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="increment_hits-source">
+            <pre><span class="ruby-comment"># File rlcr_w05_ex03.rb, line 50</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">increment_hits</span>(<span class="ruby-identifier">result</span>)
+  <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;Hit&#39;</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@no_of_hits</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-set_locations_cells" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_locations_cells</span><span
+            class="method-args">(locations)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_locations_cells-source">
+            <pre><span class="ruby-comment"># File gameboard.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_locations_cells</span>(<span class="ruby-identifier">locations</span>)
+  <span class="ruby-ivar">@locations</span> = <span class="ruby-identifier">locations</span>
+  <span class="ruby-ivar">@result</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@no_of_hits</span> = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@guesses</span> = []
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

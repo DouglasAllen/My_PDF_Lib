@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_04 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_04.txt">
+
+<p>Before you begin</p>
+
+<p>First complete: Weeks 1 to 3.</p>
+
+<p>Week 4</p>
+
+<p>During Weeks 1 to 3 the procedural style of programming (this continues to
+be used in languages such as C)  was used to write our programs.
+Programming procedurally means you focus on the steps required to complete
+a task without paying particular  attention to how the data is managed.</p>
+
+<p>I shall introduce you to Regular Expressions. Many people find regular
+expressions difficult to use, difficult to read, un-maintainable, and
+ultimately  counterproductive. You may end up using only a modest number of
+regular expressions in your Ruby and Rails applications. Becoming a regular
+expression wizard isn&#39;t a prerequisite for Rails programming. However,
+it&#39;s advisable to learn at least the basics of how regular expressions
+work.</p>
+
+<p>Apart from Regular Expressions, this week, we shall be doing three more
+lessons as we want to understand and  absorb what we read about Classes and
+Objects.</p>
+
+<p>You need to read through the following pages.</p>
+
+<p>Regular Expressions Writing our own Class in Ruby Method Missing Ruby Procs</p>
+
+<p>While doing so, please make a note of all your doubts, queries, questions,
+clarifications and after you have  completed all the pages, post these on
+the forum here. There may be some questions that relate to something that
+has not been mentioned or discussed by me here;  you could post the same
+too.</p>
+
+<p>Some of the important points to remember after you have read through the
+above pages are:</p>
+
+<p>Regular expressions, though cryptic, is a powerful tool for working with
+text. Ruby has this feature built-in. It&#39;s used for pattern-matching
+and text processing. Many people find regular expressions difficult to use,
+difficult to read, un-maintainable, and ultimately counterproductive. You
+may end up using only a modest number of regular expressions in your Ruby
+and Rails applications. Becoming a regular expression wizard isn&#39;t a
+prerequisite for Rails programming. It&#39;s advisable to learn at least
+the basics of how regular expressions work. A regular expression is simply
+a way of specifying a pattern of characters to be matched in a string. In
+Ruby, you typically create a regular expression by writing a pattern
+between slash characters (/pattern/). In Ruby, regular expressions are
+objects (of type Regexp) and can be manipulated as such.</p>
+
+<pre>// is a regular expression and an instance of the Regexp class.</pre>
+
+<p>An object is an entity that serves as a container for data and also
+controls access to the data. Associated with an object is a set of
+attributes, which are essentially no more than variables belonging to that
+object. Also associated with an object is a set of functions that provide
+an interface to the functionality of  the object, called methods. Things an
+object knows about itself are called instance variables. They represent an
+object&#39;s state (the data - for example, the quantity and the product
+id),  and can have unique values for each object of that type. Things an
+object can do are called methods. An object is a combination of state and
+methods that use the state.</p>
+
+<p>A class is used to construct an object. A class is a blueprint for an
+object. More than 30 built-in classes are predefined in the Ruby class
+hierarchy. The following class hierarchy is important, In Ruby, everything
+from an integer to a string is  considered to be an object. And each object
+has built in &#39;methods&#39; (Ruby term for functions) which can be used
+to do various useful things.</p>
+
+<p>To use a method, you need to put a dot after the object, and then append
+the method name. Some methods such as puts and gets are available
+everywhere and don&#39;t need to be associated with a specific object.
+Technically speaking, these methods are provided by Ruby&#39;s Kernel
+module (more on this later) and they are  included in all Ruby objects (the
+Kernel module is included by class <a href="Object.html">Object</a>, so its
+methods are available in  every Ruby object).</p>
+
+<p>When you run a Ruby application, an object called main of class <a
+href="Object.html">Object</a> is automatically created. This object
+provides access to the Kernel methods. Ruby integers are objects of class
+Fixnum or Bignum. The Fixnum and Bignum classes represent integers of
+differing sizes. Both classes descend from Integer (and therefore Numeric).
+The floating-point numbers are objects of class Float, corresponding to the
+native architecture&#39;s double data type. A new class is defined
+typically using class Name … end Classes in Ruby are first-class objects -
+each is an instance of class Class.</p>
+
+<p>MUG THIS UP Class is an object, and <a href="Object.html">Object</a> is a
+class.“ Hal Fulton</p>
+
+<p>When a new class is defined say Name, an object of type Class is created
+and assigned to a constant (Name. in this case). When Name.new is called to
+create a new object,  the new class method in Class is run by default, 
+which in turn invokes allocate to allocate memory for the object,  before
+finally calling the new object&#39;s initialize method. The constructing
+and initializing phases of an object are separate and both can be
+over-ridden. The initialization is done via the initialize instance method
+while the construction is done via the new class method. Initialize is not
+a constructor! Objects are created on the heap.</p>
+
+<p>In the statement:  d = <a
+href="Dog.html#method-c-new">Dog.new</a>(&#39;Labrador&#39;,
+&#39;Benzy&#39;)</p>
+
+<p>The variable d is known as a reference variable. It does not hold the
+object itself, but it holds something like a pointer or an address of the
+object. You use the dot operator (.) on a reference variable to say,  “use
+the thing before the dot to get me the thing after the dot.”</p>
+
+<p>For example:  d.bark</p>
+
+<p>As soon as an object comes into existence, it already responds to a number
+of messages. Every object is “born” with certain innate abilities. To see a
+list of innate methods, you can call the methods method:  puts d.methods 
+The result is a list of all the messages (methods) this newly minted object
+comes bundled with.</p>
+
+<p>Amongst these many methods, the methods object_id and respond_to? are
+important. Every object in Ruby has a unique id number associated with it
+that can be found by the method object_id. You can determine in advance
+(before you ask the object to do something) whether the object knows how to
+handle  the message you want to send it, by using the respond_to? method.
+You can ask any object of which class it&#39;s a member by using its
+Object.class method. instance_of? returns true if object is an instance of
+the given class. Literal &#39;Constructors&#39; means you can use special
+notation, instead of a call to new,  to create a new object of that class.</p>
+
+<p>Look at the example given for String. Symbol, Array, Hash, Range, Regexp
+Garbage Collection (GC): The Ruby object heap allocates a minimum of 8
+megabytes. Ruby&#39;s GC is called mark-and-sweep. The “mark” stage checks
+objects to see if they are still in use. If an object is in a variable that
+can still be used in the current scope,  the object (and any object inside
+that object) is marked for keeping. If the variable is long gone, off in
+another method, the object isn&#39;t marked. The “sweep” stage then frees
+objects which haven&#39;t been marked. Ruby uses a conservative
+mark-and-sweep GC mechanism. There is no guarantee that an object will
+undergo garbage collection before the program terminates. Variables are
+used to hold references to objects.</p>
+
+<p>Variables themselves have no type, nor are they objects themselves.</p>
+
+<p>method_missing gives you a way to intercept unanswerable messages and
+handle them gracefully.</p>
+
+<p>Blocks are not objects, but they can be converted into objects of class
+Proc. This can be done by calling the lambda method of the module Kernel.
+Remember you cannot pass methods into other methods (but you can pass procs
+into methods),  and methods cannot return other methods (but they can
+return procs).</p>
+
+<p>Exercises: Please complete the Week 4 exercises and discuss in the Week 4
+forum.</p>
+
+<p>Quiz: Please take the quiz after you have completed Week 4.</p>
+
+<p>All the questions are either of multiple-choice and/or true/false and based
+on what you have learned in Week 4. You have only 2 attempts to complete
+the quiz. Grades will be allotted for the quiz.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_01 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./file1.html">file1</a>
+  
+    <li><a href="./file1_tmp.html">file1.tmp</a>
+  
+    <li><a href="./file1_txt.html">file1</a>
+  
+    <li><a href="./file2.html">file2</a>
+  
+    <li><a href="./file2_txt.html">file2</a>
+  
+    <li><a href="./game_sav.html">game.sav</a>
+  
+    <li><a href="./logfile_log.html">logfile.log</a>
+  
+    <li><a href="./new-inventory_txt.html">new-inventory</a>
+  
+    <li><a href="./old-inventory_txt.html">old-inventory</a>
+  
+    <li><a href="./oliver_txt.html">oliver</a>
+  
+    <li><a href="./parallel_track_txt.html">parallel_track</a>
+  
+    <li><a href="./plain_text_txt.html">plain_text</a>
+  
+    <li><a href="./plain_text2_txt.html">plain_text2</a>
+  
+    <li><a href="./testfile.html">testfile</a>
+  
+    <li><a href="./text_txt.html">text</a>
+  
+    <li><a href="./week_01_txt.html">week_01</a>
+  
+    <li><a href="./week_02_txt.html">week_02</a>
+  
+    <li><a href="./week_03_txt.html">week_03</a>
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_01.txt">
+
+<p>Try and write your code with whatever Ruby we have learned so far.</p>
+
+<p>Please discuss all these exercises in the relevant thread in the Week 1
+Forum.</p>
+
+<p>Exercise1. Before executing the code given below, guess the results. Next,
+execute the code. Did you get it right? If you did not get it right, can
+you think of why?</p>
+
+<p>Discuss your first guess and what you got when running the code.  Goal:
+Understanding operator precedence and association.</p>
+
+<p>y = false z = true x = y or z puts x (x = y) or z puts x x = (y or z) puts
+x</p>
+
+<p>Exercise2. Read the sprintf documentation and the % documentation in the <a
+href="String.html">String</a> class and figure out the output being printed
+by of this Ruby code.</p>
+
+<pre class="ruby"><span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;%05d&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-value">123</span>
+</pre>
+
+<p>Exercise3. Write a Ruby program that displays how old I am, if I am
+979000000 seconds old. Display the result as a floating point (decimal)
+number to two decimal places (for example, 17.23). Note: To format the
+output to say 2 decimal places, we can use the Kernel&#39;s format method.
+For example, if x = 45.5678 then format(“%.2f”, x) will return the string
+45.57</p>
+
+<p>Exercise4. Write a Ruby program that tells you how many minutes there are
+in a year (do not bother right now about leap years etc.).</p>
+
+<p>Exercise5. The following program prints the value of the variable. Why?</p>
+
+<p>my_string = &#39;Hello Ruby World&#39; def my_string</p>
+
+<pre class="ruby"><span class="ruby-string">&#39;Hello World&#39;</span>
+</pre>
+
+<p>end puts my_string</p>
+
+<p>Exercise6. Write a method called convert that takes one argument which is a
+temperature in degrees Fahrenheit. This method should return the
+temperature in degrees Celsius.  To format the output to say 2 decimal
+places, we can use the Kernel&#39;s format method. For example, if x =
+45.5678 then format(“%.2f”, x) will return the string 45.57. Another way is
+to use the round function as follows:</p>
+
+<p>puts (x*100).round/100.0 Discuss these exercises in the Week 1 Forum.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

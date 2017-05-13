@@ -1,0 +1,55 @@
+Final Week Exercises
+Exercise1. 
+Write a Ruby program named lesson7exercise1.rb that defines a class called Klass which will be called in another program as follows:
+
+
+obj = Klass.new("hello")
+puts obj.say_hello
+
+where say_hello is a method in that class, which returns the string sent when an object of Klass is created. 
+Write another program named lesson7exercise1a.rb that creates an object of the class defined in program lesson7exercise1.rb and 
+then marshals it and then restores it.
+
+
+Exercise2. 
+You are using a class (say DTRConvertor) that’s got a bug in one of its methods (the bug is that the conversion rate is Rs 38). 
+You know where the bug is and how to fix it, but you can’t or don’t want to change the source file itself. 
+Write code to do it. 
+
+The original class is:
+
+class DTRConvertor
+  def convert(dollar_amount)
+    dollar_amount * 40.0 # Bug here
+  end
+end
+
+m = DTRConvertor.new
+puts m.convert(100.0)
+
+
+Exercise3. 
+Write a method called month_days, that determines the number of days in a month. 
+
+Usage:
+
+days = month_days(5) # 31 (May)
+days = month_days(2, 2000) # 29 (February 2000)
+Remember, you could use the Date class here. 
+Read the online documentation for the Date class. 
+You must account for leap years in this exercise.
+
+
+
+Exercise4. 
+Write a method last_modified(file) that takes a file name and displays something like this: 
+file was last modified 125.873605469919 days ago. 
+Use the Time class.
+
+
+Exercise5. 
+Let's say you want to run some Ruby code (such as a call to a shell command) repeatedly at a certain interval 
+(for example, once every five seconds for one minute). 
+Write a method for this. 
+Do not use Thread class for now. 
+Hint: yield and sleep methods may be required. 

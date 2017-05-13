@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_05 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_05.txt">
+
+<p>Before you begin</p>
+
+<p>First complete: Week 1 to 4.</p>
+
+<p>Week 5</p>
+
+<p>You need to read through the following pages.  While doing so, please make
+a note of all your doubts, queries, questions, clarifications and after you
+have  completed all the pages, post these on the forum here.  There may be
+some questions that relate to something that has not been mentioned or
+discussed by me here;  you could post the same too.</p>
+
+<p>Including Other Files in Ruby Ruby Open Classes Inheritance Overriding
+Methods Overloading Methods</p>
+
+<p>Some of the important points to remember after you have read through the
+above page are:</p>
+
+<p>The load method includes the named Ruby source file every time the method
+is executed. The more commonly used require method loads any given file
+only once. Note that you say require &#39;filename&#39;, not require
+&#39;filename.rb&#39;.</p>
+
+<p>In Ruby, classes are never closed: you can always add methods to an
+existing class. This applies to the classes you write as well as the
+standard, built-in classes.  All you have to do is open up a class
+definition for an existing class,  and the new contents you specify will be
+added to whatever&#39;s there.</p>
+
+<p>The benefit of inheritance is that classes lower down the hierarchy get the
+features of those higher up,  but can also add specific features of their
+own. In Ruby, a class can only inherit from a single other class. The
+Object class is the parent class of all classes in Ruby.  Its methods are
+therefore available to all objects unless explicitly overridden.</p>
+
+<p>Method overriding allows a subclass to provide a specific implementation of
+a method that is already provided  by one of its superclasses.  The
+implementation in the subclass overrides (replaces) the implementation in
+the superclass.</p>
+
+<p>Nothing stops you from defining a method twice, however the new version
+takes precedence. When you invoke super with no arguments Ruby sends a
+message to the parent of the current object,  asking it to invoke a method
+of the same name as the method invoking super.  It automatically forwards
+the arguments that were passed to the method from which it&#39;s called.
+Called with an empty argument list - super() - it sends no arguments to the
+higher-up method,  even if arguments were passed to the current method.
+Called with specific arguments - super(a, b, c) - it sends exactly those
+arguments.</p>
+
+<p><a href="A.html">A</a> Ruby class can have only one method with a given
+name.</p>
+
+<p>Sample program covering everything we have learned so far in Classes and
+Objects  (please ensure that all the following programs are stored in the
+same folder):</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Exercises:</p>
+</li></ol>
+
+<p>Please complete the Week 5 exercises and discuss in the Week 5 forum.</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Quiz:</p>
+</li></ol>
+
+<p>Please take the quiz after you have completed Week 5.  All the questions
+are either of multiple-choice and/or true/false and based on what you have
+learned in Week 5.  You have only 2 attempts to complete the quiz. Grades
+will be allotted for the quiz.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

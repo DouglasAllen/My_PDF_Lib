@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_03 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./file1.html">file1</a>
+  
+    <li><a href="./file1_tmp.html">file1.tmp</a>
+  
+    <li><a href="./file1_txt.html">file1</a>
+  
+    <li><a href="./file2.html">file2</a>
+  
+    <li><a href="./file2_txt.html">file2</a>
+  
+    <li><a href="./game_sav.html">game.sav</a>
+  
+    <li><a href="./logfile_log.html">logfile.log</a>
+  
+    <li><a href="./new-inventory_txt.html">new-inventory</a>
+  
+    <li><a href="./old-inventory_txt.html">old-inventory</a>
+  
+    <li><a href="./oliver_txt.html">oliver</a>
+  
+    <li><a href="./parallel_track_txt.html">parallel_track</a>
+  
+    <li><a href="./plain_text_txt.html">plain_text</a>
+  
+    <li><a href="./plain_text2_txt.html">plain_text2</a>
+  
+    <li><a href="./testfile.html">testfile</a>
+  
+    <li><a href="./text_txt.html">text</a>
+  
+    <li><a href="./week_01_txt.html">week_01</a>
+  
+    <li><a href="./week_02_txt.html">week_02</a>
+  
+    <li><a href="./week_03_txt.html">week_03</a>
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_03.txt">
+
+<p>Try and write your code with whatever Ruby we have learned so far.</p>
+
+<p>Exercise1. Why is the output of this program:</p>
+
+<p>def method</p>
+
+<pre class="ruby"><span class="ruby-identifier">a</span> = <span class="ruby-value">50</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>
+</pre>
+
+<p>end a = 10 method puts a as shown below:</p>
+
+<p>50 10</p>
+
+<p>Exercise2. Thanks to Marcos Souza for this exercise. A plain text file has
+the following contents:</p>
+
+<p>test test test test test test test test test test test test test test test
+test test test test test test test test test test test test word test test
+test test test test test test test test test test test test test test test
+test test test test test test test test test test Observe that in this
+file, there exists a word &#39;word&#39;. Write a clever but readable Ruby
+program that updates this file and the final contents become like this:
+test test test test test test test test test test test test test test test
+test test test test test test test test test test test test inserted word
+test test test test test test test test test test test test test test test
+test test test test test test test test test test test test Do not
+hard-code the file name.</p>
+
+<p>Exercise3. Make use of the class Dir for the following -</p>
+
+<p>Display your current working directory. Create a new directory tmp under
+your working directory. Change your working directory to tmp Display your
+current working directory. Go back to your original directory. Delete the
+tmp directory.</p>
+
+<p>Exercise4. Given the following Ruby code snippet:</p>
+
+<p>a = (1930…1951).to_a puts <a href="rand(a.size)">a</a> When you run this
+program, which of the following values will not be displayed? 1929 1930
+1945 1950 1951 1952 Explain why that value will not be displayed.</p>
+
+<p>Also, have a look at the splat operator:</p>
+
+<p>a = [*1930…1951] # splat operator</p>
+
+<p>Exercise5. Given a string s = &#39;key=value&#39;, create two strings s1
+and s2 such that s1 contains key and s2 contains value. Hint: Use some of
+the <a href="String.html">String</a> functions.</p>
+
+<p>Exercise6. Write a Deaf Grandma program. Whatever you say to grandma
+(whatever you type in), she should respond with HUH?! SPEAK UP, SONNY!,
+unless you shout it (type in all capitals). If you shout, she can hear you
+(or at least she thinks so) and yells back, NO, NOT SINCE 1938! To make
+your program really believable, have grandma shout a different year each
+time; maybe any year at random between 1930 and 1950. You can&#39;t stop
+talking to grandma until you shout BYE.</p>
+
+<p>Adapted from Chris Pine&#39;s Book.</p>
+
+<p>For example:</p>
+
+<p>You enter: Hello Grandma Grandma responds: HUH?! SPEAK UP, SONNY! You
+enter: HELLO GRANDMA Grandma responds: NO, NOT SINCE 1938!</p>
+
+<p>Exercise7. First of all, I&#39;d like to thank Peter Cooper for allowing me
+to use this exercise.</p>
+
+<p>The application you&#39;re going to develop will be a text analyzer. You
+will be working on it this and next week. Your Ruby code will read in text
+supplied in a separate file, analyze it for various patterns and
+statistics, and print out the results for the user. It&#39;s not a 3D
+graphical adventure or a fancy Web site, but text processing programs are
+the bread and butter of systems administration and most application
+development. They can be vital for parsing log files and user-submitted
+text on Web sites, and manipulating other textual data. With this
+application you&#39;ll be focusing on implementing the features quickly,
+rather than developing an elaborate object-oriented structure, any
+documentation, or a testing methodology.</p>
+
+<p>Your text analyzer will provide the following basic statistics:</p>
+
+<p>Character count Character count (excluding spaces) Line count Word count
+Sentence count Paragraph count Average number of words per sentence Average
+number of sentences per paragraph In the last two cases, the statistics are
+easily calculated from the word count, sentence count, and paragraph count.
+That is, once you have the total number of words and the total number of
+sentences, it becomes a matter of a simple division to work out the average
+number of words per sentence.</p>
+
+<p>Before you start to code, the first step is to get some test data that your
+analyzer can process. You can find the text at: <a
+href="http://rubylearning.com/data/text.txt">rubylearning.com/data/text.txt</a></p>
+
+<p>Save the file in the same folder as your other Ruby programs and call it
+text.txt. Your application will read from <a
+href="text_txt.html">text.txt</a> by default (although you&#39;ll make it
+more dynamic and able to accept other sources of data later on).</p>
+
+<p>Let me outline the basic steps you need to follow:</p>
+
+<p>Load in a file containing the text or document you want to analyze. As you
+load the file line by line, keep a count of how many lines there are (one
+of your statistics taken care of). Put the text into a string and measure
+its length to get your character count. Temporarily remove all whitespace
+and measure the length of the resulting string to get the character count
+excluding spaces. Split on whitespace to find out how many words there are.
+Split on full stops (.), &#39;!&#39; and &#39;?&#39; to find out how many
+sentences there are. Split on double newlines to find out how many
+paragraphs there are. Perform calculations to work out the averages. Create
+a new, blank Ruby source file and save it as analyzer.rb in your Ruby
+folder.</p>
+
+<p>Exercise8. Write a Ruby program that prints the numbers from 1 to 100.</p>
+
+<pre>But for multiples of three print &quot;Fizz&quot; instead of the number and for multiples of five print &quot;Buzz&quot;. 
+For numbers which are multiples of both three and five print &quot;FizzBuzz&quot;. 
+Discuss this in the FizzBuzz Forum.</pre>
+
+<p>Exercise9. Given a string, write a program to reverse the word order
+(rather than character order). The <a href="String.html">String</a> and
+Array classes provide methods which will be very helpful for solving this
+exercise.</p>
+
+<p>Exercise10. Write a Ruby program that, when given an array: collection =
+[1, 2, 3, 4, 5] calculates the sum of its elements.</p>
+
+<p>Exercise11. Write a Ruby program that, when given an array: collection =
+[12, 23, 456, 123, 4579] prints each number, and tells you whether it is
+odd or even.</p>
+
+<p>Exercise12. Something to keep your grey cells ticking.</p>
+
+<p>I have a database of all the course participants. I want to know the number
+of participants who have not attempted Quiz 1 (is it so scary ?). A student
+writes a clever Ruby program that creates an array of 0&#39;s and 1&#39;s.
+0&#39;s indicate that the participant has not attempted the Quiz and the
+1&#39;s have attempted it.</p>
+
+<p>Use this array quiz:</p>
+
+<p>quiz = [0,0,0,1,0,0,1,1,0,1] and write another clever program to solve my
+problem. That is display thenumber of participants who have not attempted
+Quiz 1.</p>
+
+<p>The output of your program should be as follow: The number of participants
+who did not attempt Quiz 1 is x out of y total participants.</p>
+
+<p>Exercise13 Ruby is a DRY language.  Ruby helps you keep your code short and
+concise.  DRY stands for: Don’t Repeat Yourself Syntactically, it’s a very
+efficient language: you can express the same thing with less lines of code.
+As we know, computers are fast enough that more lines of code do not slow
+them down. But what about you?  When it comes to debugging and maintaining,
+the more code you have to deal with, the harder it is to see what it does
+and find the problems that need fixing. Here&#39;s some code:</p>
+
+<p># The long way record = Hash.new <a href=":name">record</a> = “Satish” <a
+href=":email">record</a> = “mail@satishtalim.com” <a
+href=":phone">record</a> = “919371006659” Rewrite, the above code in one
+line, the DRY (or Ruby) way. Exercise14 The next set of exercises are
+sample questions from the Important Ruby Association Certified Ruby
+Programmer examination. Thanks to Satoshi Asakawa for the Japanese to
+English translation.</p>
+
+<p>Select all answers which return true. h = { “Ruby” =&gt; “Matz”, “Perl”
+=&gt; “Larry”, “Python” =&gt; “Guido” } Answers:</p>
+<ol><li>
+<p>h.member?(“Matz”)</p>
+</li><li>
+<p>h.member?(“Python”)</p>
+</li><li>
+<p>h.include?(“Guido”)</p>
+</li><li>
+<p>h.include?(“Ruby”)</p>
+</li><li>
+<p>h.has_value?(“Larry”)</p>
+</li><li>
+<p>h.exists?(“Perl”)</p>
+</li></ol>
+
+<p>Exercise15 Select all correct outputs for the following program:</p>
+
+<p>for i, j in [[1, 2], [3, 4], [5, 6]] p [i, j] end Answers:</p>
+<ol><li><dl class="rdoc-list label-list"><dt>[1, 2], nil
+<dd></dd></dl>
+</li></ol>
+<dl class="rdoc-list label-list"><dt>[3, 4], nil
+<dt>[5, 6], nil
+<dd></dd></dl>
+<ol><li><dl class="rdoc-list label-list"><dt>nil, [1, 2]
+<dd></dd></dl>
+</li></ol>
+<dl class="rdoc-list label-list"><dt>nil, [3, 4]
+<dt>nil, [5, 6]
+<dd></dd></dl>
+<ol><li><dl class="rdoc-list label-list"><dt>1, 2
+<dd></dd></dl>
+</li></ol>
+<dl class="rdoc-list label-list"><dt>3, 4
+<dt>5, 6
+<dd></dd></dl>
+<ol><li>
+<p>Syntax Error</p>
+</li></ol>
+
+<p>Exercise16. Select all correct ways to do an ascending sort by string
+length.</p>
+
+<p>a = [“Magazine”, “Sunday”, “Jump”] Answers:</p>
+<ol><li>
+<p>a.sort</p>
+</li><li>
+<p>a.sort { |s| s }</p>
+</li><li>
+<p>a.sort { |l, r| l &lt;=&gt; r }</p>
+</li><li>
+<p>a.sort { |l, r| l.length &lt;=&gt; r.length }</p>
+</li><li>
+<p>a.sort_by { |s| s }</p>
+</li><li>
+<p>a.sort_by { |s| s.length }</p>
+</li></ol>
+
+<p>Discuss all the above exercises in the Week 3 forum.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

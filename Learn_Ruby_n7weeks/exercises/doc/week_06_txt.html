@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_06 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./file1.html">file1</a>
+  
+    <li><a href="./file1_tmp.html">file1.tmp</a>
+  
+    <li><a href="./file1_txt.html">file1</a>
+  
+    <li><a href="./file2.html">file2</a>
+  
+    <li><a href="./file2_txt.html">file2</a>
+  
+    <li><a href="./game_sav.html">game.sav</a>
+  
+    <li><a href="./logfile_log.html">logfile.log</a>
+  
+    <li><a href="./new-inventory_txt.html">new-inventory</a>
+  
+    <li><a href="./old-inventory_txt.html">old-inventory</a>
+  
+    <li><a href="./oliver_txt.html">oliver</a>
+  
+    <li><a href="./parallel_track_txt.html">parallel_track</a>
+  
+    <li><a href="./plain_text_txt.html">plain_text</a>
+  
+    <li><a href="./plain_text2_txt.html">plain_text2</a>
+  
+    <li><a href="./testfile.html">testfile</a>
+  
+    <li><a href="./text_txt.html">text</a>
+  
+    <li><a href="./week_01_txt.html">week_01</a>
+  
+    <li><a href="./week_02_txt.html">week_02</a>
+  
+    <li><a href="./week_03_txt.html">week_03</a>
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_06.txt">
+
+<p>Exercise1. Write a class called <a href="Person.html">Person</a> that has
+balance as an instance variable and make it readable via an accessor.</p>
+
+<p>Exercise2. Write a Ruby program that analyzes an MP3 file. Many MP3 files
+have a 128-byte data structure at the end called an ID3 tag.  These 128
+bytes are literally packed with information about the song:  its name,  the
+artist,</p>
+
+<pre>which album it&#39;s from,</pre>
+
+<p>and so on.  You can parse this data structure by opening an MP3 file and
+doing a series of reads from a position near the end of the file. 
+According to the ID3 standard, if you start from the 128th-to-last byte of
+an MP3 file and read three bytes, you should get the string TAG. If you
+don&#39;t, there&#39;s no ID3 tag for this MP3 file, and nothing to do.  If
+there is an ID3 tag present, then the 30 bytes after TAG contain  the name
+of the song,  the 30 bytes after that contain the name of the artist, and
+so on. A sample song.mp3 file is available to test your program.  Use
+Symbols, wherever possible.</p>
+
+<p>Exercise3. Modify your <a href="TextAnalyzer.html">TextAnalyzer</a> program
+to add the logging feature.</p>
+
+<p>Exercise4. Modify your <a href="TextAnalyzer.html">TextAnalyzer</a> program
+to add the exception feature.</p>
+
+<p>Exercise5. Here&#39;s code for the part of a game that saves the game state
+to a file.  As a deterrent against cheating, when the game loads a save
+file it performs a simple check against the file&#39;s modification time. 
+If it differs from the timestamp recorded inside the file, the game refuses
+to load the save file.</p>
+
+<p>The save_game method is responsible for recording the timestamp: def
+save_game(file)</p>
+
+<pre class="ruby"><span class="ruby-identifier">score</span> = <span class="ruby-value">1000</span>
+<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file</span>, <span class="ruby-string">&quot;w&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+<span class="ruby-identifier">f</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">score</span>)
+<span class="ruby-identifier">f</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-constant">Time</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">to_i</span>)
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>end The load_game method is responsible for comparing the timestamp within
+the file to the time the filesystem has associated with the file.</p>
+
+<p>Write the load_game(file) method.</p>
+
+<p>This mechanism can detect simple forms of cheating: save_game(“game.sav”)
+sleep(2) load_game(“game.sav”) # =&gt; “Your saved score is 1000.” # Now
+let&#39;s cheat by increasing our score to 9000 open(“game.sav”, “r+b”) {
+|f| f.write(“9”) } load_game(“game.sav”) # RuntimeError: I suspect you of
+cheating.</p>
+
+<p>Since it&#39;s possible to modify a file&#39;s times with tools like the
+Unix touch command,  you shouldn&#39;t depend on these methods to defend
+you against a skilled attacker actively trying to fool your program.</p>
+
+<p>Read up on sleep method and Time class.</p>
+
+<p>Discuss these exercises in the Week 6 forum.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

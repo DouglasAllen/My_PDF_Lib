@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_07 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_07.txt">
+
+<p>Final Week Tutorial</p>
+
+<p>Before you begin:  First complete: Weeks 1 to 6</p>
+
+<p>Final Week:</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>You need to read through the following pages.</p>
+</li></ol>
+
+<p>While doing so, please make a note of all your doubts, queries, questions,
+clarifications and after you have  completed all the pages, post these on
+the forum here.  There may be some questions that relate to something that
+has not been mentioned or discussed by me here;  you could post the same
+too.</p>
+
+<p><a href="Duck.html">Duck</a> Typing Ruby Syntactic Sugar Mutable and
+Immutable Objects Freezing Objects frozen? <a href="Object.html">Object</a>
+Serialization Modules/Mixins Self Top level context Self inside class and
+module definitions Self in instance method definitions Self in
+singleton-method and class-method definitions Constants</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Some of the important points to remember after you have read through the
+above pages are:</p>
+</li></ol>
+
+<p>In Ruby, we rely less on the type (or class) of an object and more on its
+capabilities.  Hence, <a href="Duck.html">Duck</a> Typing means an object
+type is defined by what it can do, not by what it is. <a
+href="Duck.html">Duck</a> Typing refers to the tendency of Ruby to be less
+concerned with the class of an object and more  concerned with what methods
+can be called on it and what operations can be performed on it.</p>
+
+<p>In Ruby, we would use respond_to? or might simply pass an object to a
+method and know that an exception  will be raised if it is used
+inappropriately.</p>
+
+<p>Syntactic sugar refer to special rules that let you write your code in a
+way that doesn&#39;t correspond to  the normal rules but that is easier to
+remember how to do and looks better.</p>
+
+<p>Ruby allows you to define methods that end with an equal sign (=)</p>
+
+<p>Mutable objects are objects whose state can change. Immutable objects are
+objects whose state never changes after creation. Mutability is a property
+of an instance, not of an entire class.  Any instance can become immutable
+by calling freeze. The freeze method in class <a
+href="Object.html">Object</a> prevents you from changing an object,
+effectively turning an object into a constant.  After we freeze an object,
+an attempt to modify it results in TypeError. freeze operates on an object
+reference, not on a variable.  This means that any operation resulting in a
+new object will work. A method frozen? tells you whether an object is
+frozen or not.</p>
+
+<p>Ruby Modules are similar to classes in that they hold a collection of
+methods, constants,  and other module and class definitions.  Unlike
+classes, you cannot create objects based on modules; instead, you specify
+that you want the  functionality of a particular module to be added to the
+functionality of a class, or of a specific object. Modules serve two
+purposes: First they act as namespace, letting you define methods whose
+names will not  clash with those defined elsewhere.  Second, they allow you
+to share functionality between classes - if a class mixes in a module, 
+that module&#39;s instance methods become available as if they had been
+defined in the class.  They get mixed in.</p>
+
+<p>SYNTAX OF require/load VS. SYNTAX OF include - You may have noticed that
+when you use require or load,  you put the name of the item you&#39;re
+requiring or loading in quotation marks, but with include, you don&#39;t. 
+require and load take strings as their arguments, whereas include takes the
+name of a module, in the form of a constant.  The requirements to require
+and load are usually literal strings (in quotation marks),  but a string in
+a variable will also work.</p>
+
+<p>The main difference between inheriting from a class and mixing in a module
+is that you can mix in more than one module.  No class can inherit from
+more than one class. Class names tend to be nouns, while module names are
+often adjectives (like Stack versus Stacklike). At every point when your
+program is running, there is one and only one self - the current or default
+object  accessible to you in your program. Please note the rules given for
+self in the Self related page. Thus self (current object) is the default
+receiver of method calls and self (current object)  is where instance
+variables are found.</p>
+
+<p>Java features the ability to serialize objects, letting you store them
+somewhere and reconstitute them when needed.  Ruby calls this kind of
+serialization marshaling. Marshal.dump is used to save a serialized version
+of an object. Marshal.load is used to read in from a serialized object. A
+Ruby constant is a reference to an object. Although constants should not be
+changed, you can modify the internal states of the objects they reference.
+Remember the rules for constants.</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Exercises:</p>
+</li></ol>
+
+<p>Please complete the last week exercises and discuss in the last week forum.</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Quiz:</p>
+</li></ol>
+
+<p>Please take the quiz after you have completed the last week.  All the
+questions are either of multiple-choice and/or true/false and based on what
+you have learned in this week.  You have only 2 attempts to complete the
+quiz. Grades will be allotted for the quiz.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

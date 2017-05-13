@@ -1,0 +1,23 @@
+# Logfile created on 2012-07-17 10:08:20 -0500 by logger.rb/31641
+I, [2012-07-17T10:08:20.222079 #23331]  INFO -- : 
+file text.txt has: 
+             6389 characters
+             5055 characters excluding spaces
+             121 lines
+             1093 words
+             45 sentences
+             1 paragraphs
+             45 sentences average per paragraph
+             24 words average per sentence
+
+I, [2012-07-17T10:09:48.752556 #23383]  INFO -- : 
+file text.txt has: 
+             6389 characters
+             5055 characters excluding spaces
+             121 lines
+             1093 words
+             45 sentences
+             1 paragraphs
+             45 sentences average per paragraph
+             24 words average per sentence
+

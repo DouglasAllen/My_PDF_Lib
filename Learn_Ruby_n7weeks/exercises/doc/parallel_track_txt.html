@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>parallel_track - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./file1.html">file1</a>
+  
+    <li><a href="./file1_tmp.html">file1.tmp</a>
+  
+    <li><a href="./file1_txt.html">file1</a>
+  
+    <li><a href="./file2.html">file2</a>
+  
+    <li><a href="./file2_txt.html">file2</a>
+  
+    <li><a href="./game_sav.html">game.sav</a>
+  
+    <li><a href="./logfile_log.html">logfile.log</a>
+  
+    <li><a href="./new-inventory_txt.html">new-inventory</a>
+  
+    <li><a href="./old-inventory_txt.html">old-inventory</a>
+  
+    <li><a href="./oliver_txt.html">oliver</a>
+  
+    <li><a href="./parallel_track_txt.html">parallel_track</a>
+  
+    <li><a href="./plain_text_txt.html">plain_text</a>
+  
+    <li><a href="./plain_text2_txt.html">plain_text2</a>
+  
+    <li><a href="./testfile.html">testfile</a>
+  
+    <li><a href="./text_txt.html">text</a>
+  
+    <li><a href="./week_01_txt.html">week_01</a>
+  
+    <li><a href="./week_02_txt.html">week_02</a>
+  
+    <li><a href="./week_03_txt.html">week_03</a>
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page parallel_track.txt">
+
+<p>*PARALLEL TRACK* Understand HTTP concepts</p>
+
+<p>When you start building web applications, you would be dealing with HTTP a
+lot.</p>
+
+<p>What’s HTTP?</p>
+
+<p>HTTP means HyperText Transfer Protocol. A protocol is just a convention for
+computer dialogs. It assumes that the computers participating in the
+conversation have a way of sending messages to each other.</p>
+
+<p>HTTP uses a simple conversation pattern: the client connects to the server,
+initiates the dialog by asking the server for something, the server then
+tries to provide the client with an answer (back).</p>
+
+<p>An example of a simple HTTP request and response would be the client asking
+“give me the file A” and the server answering “I have it, here is the
+content of file A: (…content of file A…)”.</p>
+
+<p>But in reality the protocol uses its own simplified language which looks
+more like “GET /fileA” answered by “200 OK (…content of file A…)”.</p>
+
+<p>HTTP Loading a web page When a browser loads a web page, it does a GET
+request for the URL requested. The content of the page is usually in a
+special text format called HTML that allows links, images and various style
+effects.</p>
+
+<p>The browser analyses the HTML in order to display it to the user. But doing
+so, it may find that it needs more content to render the page correctly,
+like images.</p>
+
+<p>When that happens, the browser initiates one HTTP request for each image.</p>
+
+<p>When all the necessary information is downloaded, it is combined into the
+page the user sees on his screen.</p>
+
+<p>HTTP HTTP request methods (verbs)</p>
+
+<p>GET A resource is some chunk of information that can be identified by a URL
+(it&#39;s the R in URL - Uniform Resource Locator). The most common kind of
+resource is a file, but a resource may also be a dynamically-generated
+query result, a document that is available in several languages, or
+something else.</p>
+
+<p>GET is the most common HTTP method; it says “give me this resource”. Method
+names are always uppercase.</p>
+
+<p>A typical request looks like this:</p>
+
+<p>GET /path/to/file/index.html HTTP/1.0 The path is the part of the URL after
+the host name, also called the request URI (a URI is like a URL, but more
+general).</p>
+
+<p>The HTTP version always takes the form “HTTP/x.x”, uppercase.</p>
+
+<p>POST A POST request is used to send data to the server to be processed in
+some way. A POST request is different from a GET request in the following
+ways:</p>
+
+<p>There&#39;s a block of data sent with the request, in the message body. The
+request URI is not a resource to retrieve; it&#39;s usually a program to
+handle the data you&#39;re sending. The HTTP response is normally program
+output, not a static file. PUT A PUT request uploads a document from either
+the local file system or a remote HTTP server to the destination HTTP
+server.</p>
+
+<p>DELETE A DELETE request deletes a resource (or makes it unavailable) for
+future references.</p>
+
+<p>HTTP response codes</p>
+
+<p>After a client (such as a web browser) sends a request corresponding to one
+of the HTTP verbs, the web server responds with a numerical code indicating
+the HTTP status of the response. For example, a status code of 200 means
+“success”, and a status code of 301 means “permanent redirect”. If you
+install curl (when you installed the Bash shell, curl was also installed),
+a command-line client that can issue HTTP requests, you can see this
+directly at, e.g., <a href="www.satishtalim.com">www.satishtalim.com</a>
+(where the –head flag prevents curl from returning the whole page). Open a
+Bash shell and type:</p>
+
+<p>$ curl –head <a href="www.satishtalim.com">www.satishtalim.com</a></p>
+
+<pre>HTTP/1.1 200 OK
+.
+.
+.</pre>
+
+<p>Here satishtalim.com indicates that the request was successful by returning
+the status 200 OK. In contrast, google.com is permanently redirected (to <a
+href="www.google.com">www.google.com</a>, naturally), indicated by status
+code 301 (a “301 redirect”):</p>
+
+<p>$ curl –head rubylearning.org</p>
+
+<pre>HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+.
+.
+.</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

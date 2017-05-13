@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-age_in_years">#age_in_years</a>
+    
+    <li ><a href="#method-i-analyze_text">#analyze_text</a>
+    
+    <li ><a href="#method-i-buzz">#buzz</a>
+    
+    <li ><a href="#method-i-buzz-3F">#buzz?</a>
+    
+    <li ><a href="#method-i-clear_byes">#clear_byes</a>
+    
+    <li ><a href="#method-i-convert">#convert</a>
+    
+    <li ><a href="#method-i-copy_file">#copy_file</a>
+    
+    <li ><a href="#method-i-filereadwrite">#filereadwrite</a>
+    
+    <li ><a href="#method-i-fizz">#fizz</a>
+    
+    <li ><a href="#method-i-fizz-3F">#fizz?</a>
+    
+    <li ><a href="#method-i-fizzbuzz">#fizzbuzz</a>
+    
+    <li ><a href="#method-i-format">#format</a>
+    
+    <li ><a href="#method-i-granny_going_def">#granny_going_def</a>
+    
+    <li ><a href="#method-i-granny_hears">#granny_hears</a>
+    
+    <li ><a href="#method-i-input">#input</a>
+    
+    <li ><a href="#method-i-last_modified">#last_modified</a>
+    
+    <li ><a href="#method-i-leap_year-3F">#leap_year?</a>
+    
+    <li ><a href="#method-i-load_game">#load_game</a>
+    
+    <li ><a href="#method-i-method">#method</a>
+    
+    <li ><a href="#method-i-minutes_in_a_year">#minutes_in_a_year</a>
+    
+    <li ><a href="#method-i-month_days">#month_days</a>
+    
+    <li ><a href="#method-i-mtdarry">#mtdarry</a>
+    
+    <li ><a href="#method-i-my_string">#my_string</a>
+    
+    <li ><a href="#method-i-report">#report</a>
+    
+    <li ><a href="#method-i-reverse_word_order">#reverse_word_order</a>
+    
+    <li ><a href="#method-i-round">#round</a>
+    
+    <li ><a href="#method-i-save_game">#save_game</a>
+    
+    <li ><a href="#method-i-say_not">#say_not</a>
+    
+    <li ><a href="#method-i-shell_command">#shell_command</a>
+    
+    <li ><a href="#method-i-talk_to_granny">#talk_to_granny</a>
+    
+    <li ><a href="#method-i-year_minutes">#year_minutes</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="DAYMINUTES">DAYMINUTES
+        
+        <dd><p>constants for conversion multipliers.</p>
+        
+      
+        <dt id="DAY_HOURS">DAY_HOURS
+        
+        <dd>
+        
+      
+        <dt id="DAY_MINUTES">DAY_MINUTES
+        
+        <dd>
+        
+      
+        <dt id="DAY_SECONDS">DAY_SECONDS
+        
+        <dd>
+        
+      
+        <dt id="Dog">Dog
+        
+        <dd><p>bark(), eat(), chase_cat() I shall create the <a
+href="Object.html#Dog">Dog</a> object as follows: d =
+Dog.new(&#39;Leo&#39;)</p>
+        
+      
+        <dt id="HOUR_MINUTES">HOUR_MINUTES
+        
+        <dd>
+        
+      
+        <dt id="LEAPYEAR_DAYS">LEAPYEAR_DAYS
+        
+        <dd><p>years_data = %w(1900 2000 2004 2005) puts “The years to be tested and
+output are #{years_data}”</p>
+        
+      
+        <dt id="LEAPYEAR_MINUTES">LEAPYEAR_MINUTES
+        
+        <dd>
+        
+      
+        <dt id="MINUTE_SECONDS">MINUTE_SECONDS
+        
+        <dd>
+        
+      
+        <dt id="UnpredictableString">UnpredictableString
+        
+        <dd><p>Instead of subclassing a <a href="String.html">String</a>, I really cloned
+a <a href="String.html">String</a>.  This includes all  singleton methods,
+state, and behaviors of <a href="String.html">String</a> at this moment.</p>
+        
+      
+        <dt id="YEAR_DAYS">YEAR_DAYS
+        
+        <dd><p>constants for conversion multipliers.</p>
+        
+      
+        <dt id="YEAR_MINUTES">YEAR_MINUTES
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-age_in_years" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">age_in_years</span><span
+            class="method-args">(age_in_seconds)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>method of conversion</p>
+          
+          
+
+          
+          <div class="method-source-code" id="age_in_years-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex03.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">age_in_years</span>(<span class="ruby-identifier">age_in_seconds</span>)
+  <span class="ruby-identifier">age_in_seconds</span> <span class="ruby-operator">/</span> (<span class="ruby-constant">DAY_SECONDS</span> <span class="ruby-operator">*</span> <span class="ruby-constant">YEAR_DAYS</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-analyze_text" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">analyze_text</span><span
+            class="method-args">(lines)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="analyze_text-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex07.rb, line 126</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">analyze_text</span>(<span class="ruby-identifier">lines</span>)
+    <span class="ruby-ivar">@line_count</span> = <span class="ruby-identifier">lines</span>.<span class="ruby-identifier">size</span>
+    <span class="ruby-ivar">@text</span> = <span class="ruby-identifier">lines</span>.<span class="ruby-identifier">join</span>
+    <span class="ruby-ivar">@total_characters</span> = <span class="ruby-ivar">@text</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-ivar">@total_characters_nospaces</span> = <span class="ruby-ivar">@text</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/\s+/</span>, <span class="ruby-string">&#39;&#39;</span>).<span class="ruby-identifier">length</span>
+    <span class="ruby-ivar">@word_count</span> = <span class="ruby-ivar">@text</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-ivar">@sentence_count</span> = <span class="ruby-ivar">@text</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/\.|\?|!/</span>).<span class="ruby-identifier">length</span>
+    <span class="ruby-ivar">@paragraph_count</span> = <span class="ruby-ivar">@text</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/\n\n/</span>).<span class="ruby-identifier">length</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-buzz" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">buzz</span><span
+            class="method-args">(i)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="buzz-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex08.rb, line 47</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">buzz</span> <span class="ruby-identifier">i</span>
+  <span class="ruby-string">&#39;Buzz&#39;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">5</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-buzz-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">buzz?</span><span
+            class="method-args">(number)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="buzz-3F-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex08.rb, line 63</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">buzz?</span> <span class="ruby-identifier">number</span>
+  <span class="ruby-identifier">number</span> <span class="ruby-operator">%</span> <span class="ruby-value">5</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-clear_byes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">clear_byes</span><span
+            class="method-args">(bye)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="clear_byes-source">
+            <pre><span class="ruby-comment"># File rlcr_w04_ex03.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">clear_byes</span>(<span class="ruby-identifier">bye</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">bye</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&#39;BYE&#39;</span>
+    <span class="ruby-ivar">@say1</span>, <span class="ruby-ivar">@say2</span>, <span class="ruby-ivar">@say3</span> = <span class="ruby-string">&#39;&#39;</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-convert" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">convert</span><span
+            class="method-args">(degrees_F = 73)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Converts Fahrenheit to Celsius values using format string</p>
+          
+          
+
+          
+          <div class="method-source-code" id="convert-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex06.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">convert</span>(<span class="ruby-identifier">degrees_F</span> = <span class="ruby-value">73</span>)
+  (<span class="ruby-identifier">degrees_F</span> <span class="ruby-operator">-</span> <span class="ruby-value">32</span>) <span class="ruby-operator">*</span> <span class="ruby-value">5</span> <span class="ruby-operator">/</span> <span class="ruby-value">9.0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-copy_file" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">copy_file</span><span
+            class="method-args">(source, destination)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>File.delete(&#39;file1.tmp&#39;)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="copy_file-source">
+            <pre><span class="ruby-comment"># File p028swapcontents.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">copy_file</span>(<span class="ruby-identifier">source</span>, <span class="ruby-identifier">destination</span>)
+    <span class="ruby-identifier">a</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">source</span>, <span class="ruby-string">&quot;r&quot;</span>)
+    <span class="ruby-identifier">b</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">destination</span>, <span class="ruby-string">&quot;w&quot;</span>) 
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">line</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">gets</span>
+          <span class="ruby-identifier">b</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">line</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">a</span>.<span class="ruby-identifier">close</span>
+    <span class="ruby-identifier">b</span>.<span class="ruby-identifier">close</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-filereadwrite" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">filereadwrite</span><span
+            class="method-args">(file1, file2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Function to read contents of one file and write them to another file
+Accepts 2 file names - file1 and file2 Reads from file1 and writes to file2</p>
+          
+          
+
+          
+          <div class="method-source-code" id="filereadwrite-source">
+            <pre><span class="ruby-comment"># File p028swapcontents.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">filereadwrite</span>(<span class="ruby-identifier">file1</span>, <span class="ruby-identifier">file2</span>)
+  <span class="ruby-identifier">f2</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file2</span>, <span class="ruby-string">&quot;w&quot;</span>)
+  <span class="ruby-identifier">f1</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file1</span>, <span class="ruby-string">&quot;r&quot;</span>)
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">line</span> = <span class="ruby-identifier">f1</span>.<span class="ruby-identifier">gets</span>
+    <span class="ruby-identifier">f2</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">line</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">f1</span>.<span class="ruby-identifier">close</span>
+  <span class="ruby-identifier">f2</span>.<span class="ruby-identifier">close</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fizz" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fizz</span><span
+            class="method-args">(i)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>(1..100).each {|i| puts fizzbuzz i}</p>
+          
+          
+
+          
+          <div class="method-source-code" id="fizz-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex08.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fizz</span> <span class="ruby-identifier">i</span>
+  <span class="ruby-string">&#39;Fizz&#39;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">3</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fizz-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fizz?</span><span
+            class="method-args">(number)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fizz-3F-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex08.rb, line 60</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fizz?</span> <span class="ruby-identifier">number</span>
+  <span class="ruby-identifier">number</span> <span class="ruby-operator">%</span> <span class="ruby-value">3</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fizzbuzz" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fizzbuzz</span><span
+            class="method-args">(i)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fizzbuzz-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex08.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fizzbuzz</span> <span class="ruby-identifier">i</span>
+  <span class="ruby-identifier">string</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-identifier">string</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{fizz i}&quot;</span>
+  <span class="ruby-identifier">string</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{buzz i}&quot;</span>
+  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">string</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-format" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">format</span><span
+            class="method-args">(precision = 2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="format-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex06.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">format</span>(<span class="ruby-identifier">precision</span> = <span class="ruby-value">2</span>)
+  <span class="ruby-node">&quot;%.#{precision}f&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-granny_going_def" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">granny_going_def</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="granny_going_def-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex06.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">granny_going_def</span>
+    <span class="ruby-string">&#39;HUH?! SPEAK UP, SONNY!&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-granny_hears" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">granny_hears</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>rlcr_w03_ex06.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="granny_hears-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex06.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">granny_hears</span>
+    <span class="ruby-identifier">random_year</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-value">21</span>) <span class="ruby-operator">+</span> <span class="ruby-value">1930</span>
+    <span class="ruby-string">&#39;NO, NOT SINCE &#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">random_year</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;!&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-input" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">input</span><span
+            class="method-args">(applied_action_as_symbol_or_string = :inspect)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>def my_input2 gets.to_i</p>
+
+<pre class="ruby"><span class="ruby-identifier">input</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">to_i</span>    
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">input</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;&quot;</span> 
+  <span class="ruby-identifier">input</span> = <span class="ruby-value">2</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">input</span> = <span class="ruby-identifier">input</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>end</p>
+          
+          
+
+          
+          <div class="method-source-code" id="input-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex06.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">input</span>(<span class="ruby-identifier">applied_action_as_symbol_or_string</span> = <span class="ruby-value">:inspect</span>)
+  <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">applied_action_as_symbol_or_string</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-last_modified" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">last_modified</span><span
+            class="method-args">(file)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <pre class="ruby"><span class="ruby-identifier">rlcr_w07_ex04</span>.<span class="ruby-identifier">rb</span>
+</pre>
+
+<p>Exercise4.  Write a method <a
+href="Object.html#method-i-last_modified">#last_modified</a>(file) that
+takes a file name and displays something like this:  file was last modified
+125.873605469919 days ago.  Use the Time class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="last_modified-source">
+            <pre><span class="ruby-comment"># File rlcr_w07_ex04.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">last_modified</span>(<span class="ruby-identifier">file</span>)  
+  <span class="ruby-identifier">time</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">-</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">file</span>).<span class="ruby-identifier">atime</span>
+  <span class="ruby-identifier">days</span> = <span class="ruby-identifier">time</span> <span class="ruby-operator">/</span> <span class="ruby-value">86400.0</span>
+  <span class="ruby-node">&quot;#{file} was last modified #{days} days ago.&quot;</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-leap_year-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">leap_year?</span><span
+            class="method-args">(year)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="leap_year-3F-source">
+            <pre><span class="ruby-comment"># File rlcr_w02_ex03.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">leap_year?</span> <span class="ruby-identifier">year</span>
+<span class="ruby-comment">#  year = year.to_i</span>
+  <span class="ruby-identifier">year</span> <span class="ruby-operator">%</span> <span class="ruby-value">4</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>  <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">year</span> <span class="ruby-operator">%</span> <span class="ruby-value">100</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">year</span> <span class="ruby-operator">%</span> <span class="ruby-value">400</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-load_game" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">load_game</span><span
+            class="method-args">(file)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="load_game-source">
+            <pre><span class="ruby-comment"># File rlcr_w06_ex05.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">load_game</span>(<span class="ruby-identifier">file</span>)
+  <span class="ruby-identifier">open</span>(<span class="ruby-identifier">file</span>, <span class="ruby-string">&quot;r&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">score</span>, <span class="ruby-identifier">time</span> = <span class="ruby-identifier">f</span>.<span class="ruby-identifier">readlines</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>]
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">time</span>.<span class="ruby-identifier">to_i</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">f</span>.<span class="ruby-identifier">ctime</span>.<span class="ruby-identifier">to_i</span>)      
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Your saved score is #{score}&quot;</span>
+    <span class="ruby-keyword">else</span>      
+      <span class="ruby-identifier">fail</span> <span class="ruby-string">&#39;I suspect you of cheating.&#39;</span>
+    <span class="ruby-keyword">end</span>      
+  <span class="ruby-keyword">end</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">method</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="method-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex01.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">method</span>
+  <span class="ruby-identifier">a</span> = <span class="ruby-value">50</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-minutes_in_a_year" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">minutes_in_a_year</span><span
+            class="method-args">(year)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="minutes_in_a_year-source">
+            <pre><span class="ruby-comment"># File rlcr_w02_ex03.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">minutes_in_a_year</span> <span class="ruby-identifier">year</span>
+  (<span class="ruby-identifier">leap_year?</span>(<span class="ruby-identifier">year</span>) <span class="ruby-operator">?</span> <span class="ruby-constant">LEAPYEAR_MINUTES</span> <span class="ruby-operator">:</span> <span class="ruby-constant">YEAR_MINUTES</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-month_days" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">month_days</span><span
+            class="method-args">(month, year = Date.today.year)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="month_days-source">
+            <pre><span class="ruby-comment"># File rlcr_w07_ex03.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">month_days</span>(<span class="ruby-identifier">month</span>, <span class="ruby-identifier">year</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">year</span>)
+  <span class="ruby-identifier">date</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">year</span>, <span class="ruby-identifier">month</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">days</span> = (<span class="ruby-identifier">date</span>.<span class="ruby-identifier">next_month</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">date</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">year</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">year</span>  
+    <span class="ruby-node">&quot;#{days} (#{Date::MONTHNAMES[month]})&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">&quot;#{days} (#{Date::MONTHNAMES[month]} #{year})&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mtdarry" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mtdarry</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>array = [] array.push(mtdarry) p mtdarry p array</p>
+          
+          
+
+          
+          <div class="method-source-code" id="mtdarry-source">
+            <pre><span class="ruby-comment"># File rlcr_w02_ex02.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mtdarry</span>
+  <span class="ruby-value">10</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">num</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-my_string" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">my_string</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="my_string-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex05.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">my_string</span>()
+  <span class="ruby-string">&#39;Hello World&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-report" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report</span><span
+            class="method-args">(a, title, eval_this)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="report-source">
+            <pre><span class="ruby-comment"># File answer_16.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">title</span>, <span class="ruby-identifier">eval_this</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Answer #{title} #{eval_this} sorts by length? #{instance_eval(eval_this) == [&quot;Jump&quot;, &quot;Sunday&quot;, &quot;Magazine&quot;]}&quot;</span>
+<span class="ruby-keyword">rescue</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">error_stack</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Answer #{title} #{eval_this} gives Error: #{error_stack}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-reverse_word_order" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reverse_word_order</span><span
+            class="method-args">(text)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exercise9. Given a string, write a program to reverse the word order
+(rather than character order). The <a href="String.html">String</a> and
+Array classes provide methods which will be very helpful for solving this
+exercise.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="reverse_word_order-source">
+            <pre><span class="ruby-comment"># File rlcr_w03_ex09.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reverse_word_order</span>(<span class="ruby-identifier">text</span>)
+  <span class="ruby-identifier">text</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-round" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">round</span><span
+            class="method-args">(degrees_F = 68, exponent = 2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Converts Fahrenheit to Celsius values using rounding</p>
+          
+          
+
+          
+          <div class="method-source-code" id="round-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex06.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">round</span>(<span class="ruby-identifier">degrees_F</span> = <span class="ruby-value">68</span>, <span class="ruby-identifier">exponent</span> = <span class="ruby-value">2</span>)  
+    ((<span class="ruby-identifier">convert</span> <span class="ruby-identifier">degrees_F</span>) <span class="ruby-operator">*</span> <span class="ruby-value">10.0</span> <span class="ruby-operator">**</span> <span class="ruby-identifier">exponent</span>).<span class="ruby-identifier">round</span> <span class="ruby-operator">/</span> <span class="ruby-value">10.0</span> <span class="ruby-operator">**</span> <span class="ruby-identifier">exponent</span>
+<span class="ruby-comment">#    convert degrees_F.round(exponent)   </span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-save_game" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save_game</span><span
+            class="method-args">(file)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>rlcr_w06_ex05.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="save_game-source">
+            <pre><span class="ruby-comment"># File rlcr_w06_ex05.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">save_game</span>(<span class="ruby-identifier">file</span>)
+ <span class="ruby-identifier">score</span> = <span class="ruby-value">1000</span>
+ <span class="ruby-identifier">open</span>(<span class="ruby-identifier">file</span>, <span class="ruby-string">&quot;w&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+ <span class="ruby-identifier">f</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">score</span>)
+ <span class="ruby-identifier">f</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-constant">Time</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">to_i</span>)
+ <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-say_not" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">say_not</span><span
+            class="method-args">(year)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="say_not-source">
+            <pre><span class="ruby-comment"># File rlcr_w02_ex03.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">say_not</span> <span class="ruby-identifier">year</span>
+  <span class="ruby-identifier">leap_year?</span>(<span class="ruby-identifier">year</span>) <span class="ruby-operator">?</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;not &quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-shell_command" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">shell_command</span><span
+            class="method-args">(duration, interval) { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>rlcr_w07_ex05.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="shell_command-source">
+            <pre><span class="ruby-comment"># File rlcr_w07_ex05.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">shell_command</span>(<span class="ruby-identifier">duration</span>, <span class="ruby-identifier">interval</span>)
+  <span class="ruby-keyword">yield</span>
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">times</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span>(<span class="ruby-identifier">duration</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">interval</span>)
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">interval</span>
+    <span class="ruby-keyword">yield</span>    
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-talk_to_granny" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">talk_to_granny</span><span
+            class="method-args">(sonny_speaks)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="talk_to_granny-source">
+            <pre><span class="ruby-comment"># File rlcr_w04_ex03.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">talk_to_granny</span>(<span class="ruby-identifier">sonny_speaks</span>)
+    <span class="ruby-identifier">sonny_speaks</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-keyword">and</span>
+    <span class="ruby-identifier">sonny_speaks</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&#39;BYE&#39;</span> <span class="ruby-keyword">and</span>
+    <span class="ruby-identifier">sonny_speaks</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&#39;BYEBYEBYE&#39;</span> <span class="ruby-keyword">and</span> 
+    <span class="ruby-identifier">sonny_speaks</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&#39;BYE BYE BYE&#39;</span> <span class="ruby-keyword">and</span>
+    <span class="ruby-identifier">sonny_speaks</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">sonny_speaks</span>.<span class="ruby-identifier">upcase</span> <span class="ruby-operator">?</span> (<span class="ruby-identifier">puts</span> <span class="ruby-identifier">granny_hears</span>) <span class="ruby-operator">:</span> (<span class="ruby-identifier">puts</span> <span class="ruby-identifier">granny_going_def</span>) 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-year_minutes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">year_minutes</span><span
+            class="method-args">(yeardays)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="year_minutes-source">
+            <pre><span class="ruby-comment"># File rlcr_w01_ex04.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">year_minutes</span> <span class="ruby-identifier">yeardays</span> 
+  <span class="ruby-constant">DAYMINUTES</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">yeardays</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

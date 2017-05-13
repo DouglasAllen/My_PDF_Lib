@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8"
+          http-equiv="Content-Type">
+      <title>hello - RDoc Documentation</title>
+      <style>
+      body.class, body.module, body.file {
+    /* margin-left: 40px; */
+}
+      #file-index {
+ 
+ margin: 5px 5px 20px 5px;
+ padding: 5px 5px 20px 5px;
+ 
+}
+
+
+#class-index {
+ float: left;
+  margin: 5px;
+  
+}
+      /* @group Documentation Section */
+#description {
+	font-size: 100%;
+	color: #333;
+}
+
+#description p {
+	margin: 1em 0.4em;
+}
+
+#description li p {
+  margin: 0;
+}
+
+#description ul {
+	margin-left: 1.5em;
+}
+#description ul li {
+	line-height: 1.4em;
+}
+
+#description dl,
+#documentation dl {
+	margin: 8px 1.5em;
+	border: 1px solid #ccc;
+}
+#description dl {
+	font-size: 14px;
+}
+
+#description dt,
+#documentation dt {
+	padding: 2px 4px;
+	font-weight: bold;
+	background: #ddd;
+}
+#description dd,
+#documentation dd  {
+	padding: 2px 12px;
+}
+#description dd + dt,
+#documentation dd + dt {
+	margin-top: 0.7em;
+}
+
+#documentation .section {
+	font-size: 90%;
+}
+#documentation h3.section-header {
+	margin-top: 2em;
+	padding: 0.75em 0.5em;
+	background-color: #dedede;
+	color: #333;
+	font-size: 150%;
+	border: 1px solid #bbb;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#constants-list > dl,
+#attributes-list > dl {
+	margin: 1em 0 2em;
+	border: 0;
+}
+#constants-list > dl dt,
+#attributes-list > dl dt {
+	padding-left: 0;
+	font-weight: bold;
+	font-family: Monaco, "Andale Mono";
+	background: inherit;
+}
+#constants-list > dl dt a,
+#attributes-list > dl dt a {
+	color: inherit;
+}
+#constants-list > dl dd,
+#attributes-list > dl dd {
+	margin: 0 0 1em 0;
+	padding: 0;
+	color: #068;
+}
+      /* @group Source Code */
+
+div.method-source-code {
+     background: #262626; 
+    color: #efefef; 
+    margin: 1em;
+    padding: 0.5em;
+    border: 1px dashed #999;
+    overflow: hidden;
+}
+
+div.method-source-code pre {
+	background: inherit;
+	padding: 0;
+ 	color: white; 
+	overflow: auto;
+}
+
+pre {
+	background: #ddd;
+	margin: 0.5em 0;
+	padding: 0.5em;
+  color: #000;
+}
+
+pre.ruby {
+  background: #303030;
+  color: #fff;
+}
+
+
+/* @group Ruby keyword styles */
+.ruby-constant   { color: #ffff00; background: transparent; }
+.ruby-keyword    { color: #00ffff; background: transparent; }
+.ruby-ivar       { color: #eedd82; background: transparent; }
+.ruby-operator   { color: #00ffee; background: transparent; }
+.ruby-identifier { color: #ffdead; background: transparent; }
+.ruby-node       { color: #ffa07a; background: transparent; }
+._ruby-comment    { color: #b22222; font-weight: bold; background: transparent; }
+.ruby-regexp     { color: #ffa07a; background: transparent; }
+.ruby-value      { color: #7fffd4; background: transparent; }
+
+/*  JGB 2012-10-17 */
+.ruby-comment    { color: #5eff1f; font-weight: bold; background: transparent; }
+/* @end */
+/* @end */
+</style>
+    </meta>
+  </head>
+  <body class="file">
+    <div class="description"
+         id="documentation">
+      <pre class="ruby">
+<span class="ruby-comment"># p001hello.rb</span>
+<span class="ruby-comment"># more than one way to do hello.</span>
+        
+<span class="ruby-identifier">puts </span><span class="ruby-string">'hello'</span>
+<span class="ruby-identifier">puts </span><span class="ruby-string">&quot;hello2&quot;</span>
+
+<span class="ruby-identifier">hello</span> = <span class="ruby-string">'hello'</span>
+<span class="ruby-identifier">puts </span><span class="ruby-identifier">hello</span>
+
+<span class="ruby-identifier">hello2</span> = <span class="ruby-string"> &quot;hello2&quot;</span>
+<span class="ruby-identifier">puts </span><span class="ruby-identifier">hello2</span>
+
+<span class="ruby-keyword">def </span><span class="ruby-identifier">hello</span>  
+<span class="ruby-string">  'hello'</span>
+<span class="ruby-keyword">end</span> 
+
+<span class="ruby-identifier">puts </span><span class="ruby-identifier">hello</span>()
+
+<span class="ruby-keyword">def </span><span class="ruby-identifier">hello2</span>  
+<span class="ruby-string">  &quot;hello2&quot;</span> 
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts </span><span class="ruby-identifier">hello2</span>()      
+</pre>
+
+
+<pre class="ruby"> <span class="ruby-comment"># p002rubynumbers</span>
+ <span class="ruby-comment"># Usual operators:  </span>
+ <span class="ruby-comment"># + addition  </span>
+ <span class="ruby-comment"># - subtraction  </span>
+ <span class="ruby-comment"># * multiplication  </span>
+ <span class="ruby-comment"># / division  </span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;1 + 2 = #{1 + 2}&quot;</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;2 * 3 = #{2 * 3}&quot;</span> 
+
+<span class="ruby-comment"># # Integer division  </span>
+<span class="ruby-comment"># # When you do arithmetic with integers, you'll get integer answers  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;3 / 2 = #{3 / 2}&quot;</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;10 - 11 = #{10 - 11}&quot;</span>
+
+<span class="ruby-comment"># # Check to see what these are  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;1.5 / 2.6 = #{1.5 / 2.6}&quot;</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;3.class = #{3.class}&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;11.class = #{11.class}&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;1.5.class = #{1.5.class}&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;2.6.class = #{2.6.class}&quot;</span> 
+
+<span class="ruby-comment"># # Let's see what modulo in Ruby does.</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;5 % 3 = #{5 % 3}&quot;</span>    <span class="ruby-comment"># prints  2  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;-5 % 3 = #{-5 % 3}&quot;</span>   <span class="ruby-comment"># prints  1  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;5 % -3 = #{5 % -3}&quot;</span>   <span class="ruby-comment"># prints -1  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;-5 % -3 = #{-5 % -3}&quot;</span>  <span class="ruby-comment"># prints -2  </span>
+
+<span class="ruby-comment"># # The boolean OR</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;nil || 2008  = #{nil || 2008}&quot;</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;false || 2008 = #{false || 2008}&quot;</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'&quot;ruby&quot; || 2008 = '</span> <span class="ruby-string">&quot;ruby&quot;</span> <span class="ruby-operator">||</span> <span class="ruby-value">2008</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;2008 || nil  = #{2008 || nil}&quot;</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;2008 || false = #{2008 || false}&quot;</span>
+<span class="ruby-identifier">e</span> = <span class="ruby-value">2008</span> <span class="ruby-operator">||</span> <span class="ruby-string">&quot;ruby&quot;</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'2008 || &quot;ruby&quot; = '</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{e}&quot;</span>   
+
+<span class="ruby-ivar">@variable</span> = <span class="ruby-ivar">@variable</span> <span class="ruby-operator">||</span> <span class="ruby-string">&quot;default value&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;@variable = #{@variable}&quot;</span>  
+<span class="ruby-ivar">@variable</span> <span class="ruby-operator">||=</span> <span class="ruby-string">&quot;default value&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;@variable = #{@variable}&quot;</span>  
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">g</span> <span class="ruby-operator">*</span><span class="ruby-identifier">args</span> <span class="ruby-comment"># The splat here says accept 1 or more arguments</span>
+             <span class="ruby-comment"># in the form of an Array  </span>
+  <span class="ruby-identifier">args</span>       <span class="ruby-comment"># This returns an array  </span>
+<span class="ruby-keyword">end</span>  
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">f</span> <span class="ruby-identifier">arg</span>  
+  <span class="ruby-identifier">arg</span>  
+<span class="ruby-keyword">end</span>  
+
+<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>,<span class="ruby-identifier">z</span> = [<span class="ruby-keyword">true</span>, <span class="ruby-string">'two'</span>, <span class="ruby-keyword">false</span>] <span class="ruby-comment"># parrallel assignment lets us do this</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;x = #{x}, y = #{y}, z = #{z}&quot;</span>
+
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">b</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">y</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">c</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">z</span>) <span class="ruby-keyword">then</span> <span class="ruby-identifier">d</span> = <span class="ruby-identifier">g</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>,<span class="ruby-identifier">c</span>) <span class="ruby-keyword">end</span> 
+
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">b</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">y</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">c</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">z</span>) <span class="ruby-keyword">then</span>  
+  <span class="ruby-identifier">d</span> = <span class="ruby-identifier">g</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>,<span class="ruby-identifier">c</span>) <span class="ruby-comment"># An array is returned, and stored in variable d  </span>
+<span class="ruby-keyword">end</span>  
+<span class="ruby-comment"># #p d # using p to puts and inspect d  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;x and y and z makes d = #{d.class}&quot;</span>
+
+<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>,<span class="ruby-identifier">z</span> = [<span class="ruby-keyword">true</span>, <span class="ruby-string">'two'</span>, <span class="ruby-keyword">nil</span>] <span class="ruby-comment"># parrallel assignment lets us do this  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;x = #{x}, y = #{y}, z = nil&quot;</span>  
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">b</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">y</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">c</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">z</span>) <span class="ruby-keyword">then</span>  
+   <span class="ruby-identifier">d</span> = <span class="ruby-identifier">g</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>,<span class="ruby-identifier">c</span>) <span class="ruby-comment"># An array is returned, and stored in variable d  </span>
+<span class="ruby-keyword">end</span>  
+<span class="ruby-comment"># #p d # using p to puts and inspect d  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;x and y and z makes d = #{d.class}&quot;</span>
+
+<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>,<span class="ruby-identifier">z</span> = [<span class="ruby-keyword">true</span>, <span class="ruby-string">'two'</span>, <span class="ruby-string">'ten'</span>] <span class="ruby-comment"># parrallel assignment lets us do this  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;x = #{x}, y = #{y}, z = #{z}&quot;</span>  
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">b</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">y</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">c</span> = <span class="ruby-identifier">f</span>(<span class="ruby-identifier">z</span>) <span class="ruby-keyword">then</span>  
+  <span class="ruby-identifier">d</span> = <span class="ruby-identifier">g</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>,<span class="ruby-identifier">c</span>) <span class="ruby-comment"># An array is returned, and stored in variable d  </span>
+<span class="ruby-keyword">end</span>  
+<span class="ruby-comment"># #p d # using p to puts and inspect d  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;x and y and z makes d = #{d.class}&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;d = #{d}&quot;</span>
+</pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p003rubystrings.rb</span>
+<span class="ruby-comment"># Ruby Strings</span>
+<span class="ruby-comment"># In Ruby, strings are mutable  </span>
+
+<span class="ruby-comment"># # Can use &quot; or ' for Strings, but ' is more efficient</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'Hello World'</span>
+<span class="ruby-constant">Hello</span> <span class="ruby-constant">World</span>
+
+<span class="ruby-comment"># # String concatenation</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'I like'</span> <span class="ruby-operator">+</span> <span class="ruby-string">' Ruby'</span>
+<span class="ruby-constant">I</span> <span class="ruby-identifier">like</span> <span class="ruby-constant">Ruby</span>
+
+<span class="ruby-comment"># # Escape sequence</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'It\s my Ruby'</span>
+<span class="ruby-constant">It</span><span class="ruby-string">'s my Ruby
+
+# # New here, displays the string three times
+puts '</span><span class="ruby-constant">Hello</span><span class="ruby-string">' * 3
+HelloHelloHello
+
+# # Defining a constant
+# # More on Constants later, here
+# # http://rubylearning.com/satishtalim/ruby_names.html
+PI = 3.1416
+puts PI
+3.1416
+</span></pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p004stringusage.rb</span>
+<span class="ruby-constant">PI</span> = <span class="ruby-value">3.1416</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-constant">PI</span>
+<span class="ruby-value">3.1416</span>
+
+
+<span class="ruby-comment"># Defining a local variable  </span>
+<span class="ruby-identifier">my_string</span> = <span class="ruby-string">'I love my city, Pune'</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">my_string</span>
+<span class="ruby-constant">I</span> <span class="ruby-identifier">love</span> <span class="ruby-identifier">my</span> <span class="ruby-identifier">city</span>, <span class="ruby-constant">Pune</span>
+
+<span class="ruby-comment"># Conversions</span>
+<span class="ruby-comment"># .to_i, .to_f, .to_s</span>
+
+<span class="ruby-identifier">var1</span> = <span class="ruby-value">5</span>
+<span class="ruby-identifier">var2</span> = <span class="ruby-string">'2'</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">var1</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">var2</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-value">7</span>
+
+<span class="ruby-comment"># appending to a string</span>
+<span class="ruby-identifier">a</span> = <span class="ruby-string">'hello '</span>
+<span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">'world.
+I love this world...'</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>
+<span class="ruby-identifier">hello</span> <span class="ruby-identifier">world</span>.
+<span class="ruby-constant">I</span> <span class="ruby-identifier">love</span> <span class="ruby-identifier">this</span> <span class="ruby-identifier">world</span><span class="ruby-operator">...</span>
+
+<span class="ruby-comment"># marks the start of the string literal</span>
+<span class="ruby-comment"># It is followed by a delimiter of your choice.</span>
+<span class="ruby-comment"># The string literal then starts from the next</span>
+<span class="ruby-comment"># new line and finishes when the delimiter is</span>
+<span class="ruby-comment"># repeated again on a line on its own.</span>
+
+<span class="ruby-identifier">a</span> = <span class="ruby-value">&lt;&lt;END_STR
+this is the string
+with a second line
+END_STR</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>
+<span class="ruby-identifier">this</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">string</span>
+<span class="ruby-identifier">with</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">second</span> <span class="ruby-identifier">line</span>
+</pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p005methods.rb</span>
+<span class="ruby-identifier">puts</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;gets and chomp&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;STDOUT.sync = true&quot;</span>
+<span class="ruby-constant">STDOUT</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword">true</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;or&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;STDOUT.flush&quot;</span>
+<span class="ruby-identifier">puts</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;puts \&quot;In which city do you stay?\&quot;&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;city = gets.chomp&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;puts \&quot;The city is \&quot; + city&quot;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;In which city do you stay?&quot;</span>
+<span class="ruby-identifier">city</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>  
+<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The city is &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">city</span>
+<span class="ruby-identifier">puts</span>
+</pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p006ftoc.rb</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'Enter temperature in Fahrenheit: '</span>
+<span class="ruby-constant">STDOUT</span>.<span class="ruby-identifier">flush</span>
+<span class="ruby-identifier">temp_in_fahrenheit</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+<span class="ruby-identifier">temp_in_celsius</span> = (((<span class="ruby-identifier">temp_in_fahrenheit</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-operator">-</span> <span class="ruby-value">32.0</span>) <span class="ruby-operator">/</span> <span class="ruby-value">9.0</span>) <span class="ruby-operator">*</span> <span class="ruby-value">5.0</span>)
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Temperature #{temp_in_fahrenheit}&quot;</span> <span class="ruby-operator">+</span>
+      <span class="ruby-string">' degree Fahrenheit = '</span> <span class="ruby-operator">+</span>
+      <span class="ruby-identifier">format</span>(<span class="ruby-string">&quot;%.2f&quot;</span>, <span class="ruby-identifier">temp_in_celsius</span>) <span class="ruby-operator">+</span>
+      <span class="ruby-string">' degree Celsius'</span>
+</pre>
+
+<pre class="ruby"><span class="ruby-comment"># p007dt.rb</span>
+<span class="ruby-comment"># Ruby names help to distinguish their intended use.</span>
+
+<span class="ruby-comment"># Instance variable name starts with a @ sign.</span>
+<span class="ruby-ivar">@my_ivar</span>
+
+<span class="ruby-comment"># Class variable name starts with a @@ sign.</span>
+<span class="ruby-identifier">@@my_cvar</span>
+
+<span class="ruby-comment"># Global variable name starts with a $ sign.</span>
+<span class="ruby-identifier">$my_gvar</span>
+
+<span class="ruby-comment"># Constant names starts with an uppercase letter.</span>
+<span class="ruby-comment"># Class names, Module names and Constants use capitalization.</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-constant">ConstantName</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">DIG</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">MAX</span>
+
+<span class="ruby-comment"># Method names should begin with a lowercase letter.</span>
+<span class="ruby-comment"># Use _underscores to separate multiword method or variable names.</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">my_method</span>;<span class="ruby-keyword">end</span>
+
+<span class="ruby-comment"># ?, ! and = are the only weird method suffixes allowed.</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">is_my_method?</span>;<span class="ruby-keyword">end</span>
+
+<span class="ruby-comment"># ! or bang labels a method as dangerous-specifically.</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">my_dangerous_method!</span>;<span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">my_assignment_method</span>;<span class="ruby-keyword">end</span> 
+
+<span class="ruby-comment"># # Ruby is dynamic</span>
+<span class="ruby-identifier">x</span> = <span class="ruby-value">7</span>           <span class="ruby-comment"># integer</span>
+<span class="ruby-identifier">x</span> = <span class="ruby-string">&quot;house&quot;</span>     <span class="ruby-comment"># string</span>
+<span class="ruby-identifier">x</span> = <span class="ruby-value">7.5</span>         <span class="ruby-comment"># real</span>
+
+<span class="ruby-comment"># # In Ruby, everything you manipulate is an object</span>
+<span class="ruby-string">'I love Ruby'</span>.<span class="ruby-identifier">length</span>
+<span class="ruby-value">11</span>
+
+<span class="ruby-comment"># The basic types in Ruby are:</span>
+<span class="ruby-comment">#  Numeric (subtypes include Fixnum, Integer, and Float)</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Numeric.html  </span>
+<span class="ruby-comment"># Fixnum   http://www.ruby-doc.org/core-1.9.3/Fixnum.html</span>
+<span class="ruby-comment"># Integer  http://www.ruby-doc.org/core-1.9.3/Integer.html</span>
+<span class="ruby-comment"># Float    http://www.ruby-doc.org/core-1.9.3/Float.html</span>
+<span class="ruby-comment"># String</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/String.html</span>
+<span class="ruby-comment"># Array</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Array.html</span>
+<span class="ruby-comment"># Hash</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Hash.html</span>
+<span class="ruby-comment"># Object</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Object.html</span>
+<span class="ruby-comment"># Symbol</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Symbol.html</span>
+<span class="ruby-comment"># Range</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Range.html</span>
+<span class="ruby-comment"># RegExp.</span>
+<span class="ruby-comment">#  http://www.ruby-doc.org/core-1.9.3/Regexp.html</span>
+
+<span class="ruby-identifier">s</span> = <span class="ruby-string">'hello'</span>  
+<span class="ruby-identifier">s</span>.<span class="ruby-identifier">class</span>  <span class="ruby-comment"># String</span>
+<span class="ruby-constant">String</span>    
+
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'I am an object = '</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-constant">I</span> <span class="ruby-identifier">am</span> <span class="ruby-identifier">an</span> <span class="ruby-identifier">object</span> = <span class="ruby-identifier">main</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-string">'I am in class = '</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-constant">I</span> <span class="ruby-identifier">am</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">class</span> = <span class="ruby-constant">Object</span>
+
+<span class="ruby-identifier">print</span> <span class="ruby-string">'The object methods are = '</span>  
+<span class="ruby-constant">The</span> <span class="ruby-identifier">object</span> <span class="ruby-identifier">methods</span> <span class="ruby-identifier">are</span> =
+
+<span class="ruby-identifier">puts</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">private_methods</span>.<span class="ruby-identifier">sort</span>
+<span class="ruby-constant">Array</span>
+<span class="ruby-constant">Complex</span>
+<span class="ruby-constant">Float</span>
+<span class="ruby-constant">Integer</span>
+<span class="ruby-constant">Rational</span>
+<span class="ruby-constant">String</span>
+<span class="ruby-identifier">__callee__</span>
+<span class="ruby-identifier">__method__</span>
+<span class="ruby-comment"># = tick commented out for rdoc reasons.</span>
+<span class="ruby-identifier">abort</span>  <span class="ruby-comment"># continues  </span>
+
+<span class="ruby-value">5</span>.<span class="ruby-identifier">times</span> { <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Mice!\n&quot;</span> } <span class="ruby-comment"># more on blocks later</span>
+<span class="ruby-constant">Mice!</span>
+<span class="ruby-constant">Mice!</span>
+<span class="ruby-constant">Mice!</span>
+<span class="ruby-constant">Mice!</span>
+<span class="ruby-constant">Mice!</span> 
+
+<span class="ruby-string">&quot;Elephants Like Peanuts&quot;</span>.<span class="ruby-identifier">length</span> 
+<span class="ruby-value">22</span>
+
+<span class="ruby-identifier">rice_on_square</span> = <span class="ruby-value">1</span>
+
+<span class="ruby-value">64</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">square</span><span class="ruby-operator">|</span>  
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;On square #{square + 1} are #{rice_on_square} grain(s)&quot;</span>  
+  <span class="ruby-identifier">rice_on_square</span> <span class="ruby-operator">*=</span> <span class="ruby-value">2</span>  
+<span class="ruby-keyword">end</span> 
+
+<span class="ruby-constant">On</span> <span class="ruby-identifier">square</span> <span class="ruby-value">1</span> <span class="ruby-identifier">are</span> <span class="ruby-value">1</span> <span class="ruby-identifier">grain</span>(<span class="ruby-identifier">s</span>)
+<span class="ruby-constant">On</span> <span class="ruby-identifier">square</span> <span class="ruby-value">2</span> <span class="ruby-identifier">are</span> <span class="ruby-value">2</span> <span class="ruby-identifier">grain</span>(<span class="ruby-identifier">s</span>)
+<span class="ruby-constant">On</span> <span class="ruby-identifier">square</span> <span class="ruby-value">3</span> <span class="ruby-identifier">are</span> <span class="ruby-value">4</span> <span class="ruby-identifier">grain</span>(<span class="ruby-identifier">s</span>)
+<span class="ruby-constant">On</span> <span class="ruby-identifier">square</span> <span class="ruby-value">4</span> <span class="ruby-identifier">are</span> <span class="ruby-value">8</span> <span class="ruby-identifier">grain</span>(<span class="ruby-identifier">s</span>) <span class="ruby-comment"># continues</span>
+</pre>
+
+<pre class="ruby"><span class="ruby-comment"># p008mymethods.rb</span>
+<span class="ruby-comment"># A method returns the value of the last statement.</span>
+<span class="ruby-comment"># Methods that act as queries are often named with a trailing ?</span>
+<span class="ruby-comment"># Methods that are &quot;dangerous,&quot; or modify the receiver,</span>
+<span class="ruby-comment"># might be named with a trailing ! (Bang methods)</span>
+
+<span class="ruby-comment"># A simple method:</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hello</span>
+  <span class="ruby-string">'Hello'</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-comment">#use the method</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">hello</span>
+
+<span class="ruby-comment"># Method with an argument - 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hello1</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-string">'Hello '</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">hello1</span>(<span class="ruby-string">'satish'</span>))
+
+<span class="ruby-comment"># Method with an argument - 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hello2</span> <span class="ruby-identifier">name2</span>
+   <span class="ruby-string">'Hello '</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name2</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">hello2</span> <span class="ruby-string">'talim'</span>)
+</pre>
+
+<pre class="ruby"><span class="ruby-comment"># p009mymethods1.rb</span>
+<span class="ruby-comment"># Interpolation refers to the process of inserting the result of an</span>
+<span class="ruby-comment"># expression into a string literal.</span>
+<span class="ruby-comment"># The interpolation operator #{...} gets calculated separately</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mtd</span>(<span class="ruby-identifier">arg1</span>=<span class="ruby-string">&quot;Dibya&quot;</span>, <span class="ruby-identifier">arg2</span>=<span class="ruby-string">&quot;Shashank&quot;</span>, <span class="ruby-identifier">arg3</span>=<span class="ruby-string">&quot;Shashank&quot;</span>)
+  <span class="ruby-node">&quot;#{arg1}, #{arg2}, #{arg3}, &quot;</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">mtd</span>.<span class="ruby-identifier">class</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">mtd</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Ruby&quot;</span>
+</pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p010aliasmtd.rb</span>
+<span class="ruby-comment"># alias new_name old_name</span>
+<span class="ruby-comment"># When a method is aliased, the new name refers</span>
+<span class="ruby-comment"># to a copy of the original method's body.</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">oldmtd</span>
+  <span class="ruby-string">&quot;old method&quot;</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">oldmtd</span>
+
+<span class="ruby-comment">#alias newmtd oldmtd</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">oldmtd</span>
+  <span class="ruby-string">&quot;old improved method&quot;</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">alias</span> <span class="ruby-identifier">newmtd</span> <span class="ruby-identifier">oldmtd</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">oldmtd</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">newmtd</span>
+</pre>
+
+<pre class="ruby"><span class="ruby-comment"># p011vararg.rb</span>
+<span class="ruby-comment"># Variable number of parameters example:</span>
+<span class="ruby-comment"># The asterisk(*splat) is actually taking all method arguments sent</span>
+<span class="ruby-comment"># and assigning them to an array named my_string as shown below.</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">foo</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">my_string</span>)
+  <span class="ruby-identifier">my_string</span>.<span class="ruby-identifier">inspect</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">foo</span>(<span class="ruby-string">'hello'</span>,<span class="ruby-string">'world'</span>)
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">foo</span>()
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">opt_args</span>(<span class="ruby-identifier">a</span>,<span class="ruby-operator">*</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">b</span>)
+  <span class="ruby-node">&quot;#{a}, #{x}, #{b}&quot;</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">opt_args</span>(<span class="ruby-string">&quot;first_arg&quot;</span>, <span class="ruby-string">&quot;second_arg&quot;</span>, <span class="ruby-string">&quot;third_arg&quot;</span>)
+</pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p012mtdstack.rb</span>
+<span class="ruby-comment"># The sequence the parameters are put on the stack is left to right.</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mtd</span>(<span class="ruby-identifier">a</span>=<span class="ruby-value">99</span>, <span class="ruby-identifier">b</span>=<span class="ruby-identifier">a</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+  [<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>]
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">mtd</span>
+
+<span class="ruby-comment"># Are the parameters passed by value or reference?</span>
+<span class="ruby-comment">#  Observe the following example:</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">downer</span>(<span class="ruby-identifier">string</span>)  
+  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">downcase</span>  
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">a</span> = <span class="ruby-string">&quot;HELLO&quot;</span>  
+<span class="ruby-identifier">downer</span>(<span class="ruby-identifier">a</span>)      <span class="ruby-comment"># -&gt; &quot;hello&quot;  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>         <span class="ruby-comment"># -&gt; &quot;HELLO&quot;  </span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">downer</span>(<span class="ruby-identifier">string</span>)  
+  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">downcase!</span>  
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">a</span> = <span class="ruby-string">&quot;HELLO&quot;</span>  
+<span class="ruby-identifier">downer</span>(<span class="ruby-identifier">a</span>)      <span class="ruby-comment"># -&gt; &quot;hello&quot;  </span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>         <span class="ruby-comment"># -&gt; &quot;hello&quot;</span>
+</pre>
+
+
+<pre class="ruby"><span class="ruby-comment"># p012zmm.rb</span>
+<span class="ruby-keyword">class</span> <span class="ruby-constant">Dummy</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">m</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+    <span class="ruby-identifier">txt</span> = <span class="ruby-node">&quot;There's no method called #{m} here.\n-- please try again.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">txt</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-constant">Dummy</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">anything</span>
+<span class="ruby-constant">There</span><span class="ruby-string">'s no method called anything here.
+-- please try again.
+</span></pre>
+    </div>
+  </body>
+</html>

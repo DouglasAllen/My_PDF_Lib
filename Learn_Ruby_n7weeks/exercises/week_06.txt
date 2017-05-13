@@ -1,0 +1,52 @@
+Exercise1. Write a class called Person that has balance as an instance variable and make it readable via an accessor.
+
+Exercise2. Write a Ruby program that analyzes an MP3 file. Many MP3
+files have a 128-byte data structure at the end called an ID3 tag. 
+These 128 bytes are literally packed with information about the song: 
+its name, 
+the artist,
+ which album it's from, 
+and so on. 
+You can parse this data structure by opening an MP3 file and doing a series of reads from a position near the end of the file. 
+According to the ID3 standard, if you start from the 128th-to-last byte of an MP3 file and read three bytes, you should get the string TAG.
+If you don't, there's no ID3 tag for this MP3 file, and nothing to do. 
+If there is an ID3 tag present, then the 30 bytes after TAG contain 
+the name of the song, 
+the 30 bytes after that contain the name of the artist, and so on.
+A sample song.mp3 file is available to test your program. 
+Use Symbols, wherever possible.
+
+Exercise3. Modify your TextAnalyzer program to add the logging feature.
+
+Exercise4. Modify your TextAnalyzer program to add the exception feature.
+
+Exercise5. Here's code for the part of a game that saves the game state to a file. 
+As a deterrent against cheating, when the game loads a save file it performs a simple check against the file's modification time. 
+If it differs from the timestamp recorded inside the file, the game refuses to load the save file.
+
+The save_game method is responsible for recording the timestamp:
+def save_game(file)
+ score = 1000
+ open(file, "w") do |f|
+ f.puts(score)
+ f.puts(Time.new.to_i)
+ end
+end
+The load_game method is responsible for comparing the timestamp within the file to the time the filesystem has associated with the file.
+
+Write the load_game(file) method.
+
+This mechanism can detect simple forms of cheating:
+save_game("game.sav")
+sleep(2)
+load_game("game.sav") # => "Your saved score is 1000."
+# Now let's cheat by increasing our score to 9000
+open("game.sav", "r+b") { |f| f.write("9") }
+load_game("game.sav") # RuntimeError: I suspect you of cheating.
+
+Since it's possible to modify a file's times with tools like the Unix touch command, 
+you shouldn't depend on these methods to defend you against a skilled attacker actively trying to fool your program. 
+
+Read up on sleep method and Time class.
+
+Discuss these exercises in the Week 6 forum. 

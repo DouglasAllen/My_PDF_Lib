@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_06 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ruby_Logging/log_file_log.html">log_file.log</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_06.txt">
+
+<p>Week 6: Tutorial</p>
+
+<p>Before you begin:  First complete: Weeks 1 to 5</p>
+
+<p>Week 6:</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>You need to read through the following pages.</p>
+</li></ol>
+
+<p>While doing so, please make a note of all your doubts, queries, questions,
+clarifications and after you have  completed all the pages, post these on
+the forum here.  There may be some questions that relate to something that
+has not been mentioned or discussed by me here;  you could post the same
+too.</p>
+
+<p>Access Control Exceptions Ruby Logging Time class</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Some of the important points to remember after you have read through the
+above pages are:</p>
+</li></ol>
+
+<p>Ruby gives you three levels of protection: public - methods can be called
+by everyone. A class&#39;s instance methods are public by default.
+protected - methods can be invoked only by objects of the defining class
+and its subclasses. private - methods cannot be called with an that private
+methods can be called only in the context  of the current object.explicit
+receiver - the receiver is always self.  This means The initialize method
+is always private.</p>
+
+<p>Access control is determined dynamically, as the program runs, not
+statically.  You will get an access violation only when the code attempts
+to execute the restricted method. Top-level methods are private instance
+methods of the Kernel module.</p>
+
+<p>attr_reader is reader only; attr_writer is writer only and attr_accessor is
+both reader and writer.</p>
+
+<p>An exception is a special kind of object, an instance of the class
+Exception or a descendant of that class. The raise method is from the
+Kernel module.  By default, raise creates an exception of the RuntimeError
+class.  To raise an exception of a specific class, you can pass in the
+class name as an argument to raise. To do exception handling, we enclose
+the code that could raise an exception in a begin-end block and use  one or
+more rescue clauses to tell Ruby the types of exceptions we want to handle.</p>
+
+<p>It is to be noted that the body of a method definition is an implicit
+begin-end block;  the begin is omitted, and the entire body of the method
+is subject to exception handling,  ending with the end of the method. If
+you write a rescue clause with no parameter list, the parameter defaults to
+StandardError.</p>
+
+<p>If you need the guarantee that some processing is done at the end of a
+block of code,  regardless of whether an exception was raised then the
+ensure clause can be used.  ensure goes after the last rescue clause and
+contains a chunk of code that will always be executed  as the block
+terminates. The ensure block will always run.</p>
+
+<p>By default, the inspect message, which can be sent to any object, formats
+the object&#39;s ID and instance variables.  It returns a string containing
+a human-readable representation of object.  If not overridden, uses the
+to_s method to generate the string. The Time class contains Ruby&#39;s
+interface to the set of time libraries written in <a href="C.html">C</a>.
+Time zero for Ruby is the first second GMT of January 1, 1970. Ruby&#39;s
+DateTime class is superior to Time for astronomical and historical
+applications,  but you can use Time for most everyday programs.</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Exercises:</p>
+</li></ol>
+
+<p>Please complete the Week 6 exercises and discuss in the Week 6 forum.</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Quiz:</p>
+</li></ol>
+
+<p>Please take the quiz after you have completed Week 6.  All the questions
+are either of multiple-choice and/or true/false and based on what you have
+learned in Week 6.  You have only 2 attempts to complete the quiz. Grades
+will be allotted for the quiz.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-args">#args</a>
+    
+    <li ><a href="#method-i-call_block">#call_block</a>
+    
+    <li ><a href="#method-i-callbacks">#callbacks</a>
+    
+    <li ><a href="#method-i-generic_return">#generic_return</a>
+    
+    <li ><a href="#method-i-greet">#greet</a>
+    
+    <li ><a href="#method-i-lambda_return">#lambda_return</a>
+    
+    <li ><a href="#method-i-leap_year-3F">#leap_year?</a>
+    
+    <li ><a href="#method-i-myblock_function">#myblock_function</a>
+    
+    <li ><a href="#method-i-proc_return">#proc_return</a>
+    
+    <li ><a href="#method-i-say_goodnight">#say_goodnight</a>
+    
+    <li ><a href="#method-i-say_goodnight2">#say_goodnight2</a>
+    
+    <li ><a href="#method-i-square">#square</a>
+    
+    <li ><a href="#method-i-try">#try</a>
+    
+    <li ><a href="#method-i-verbose_greet">#verbose_greet</a>
+    
+    <li ><a href="#method-i-what_am_i">#what_am_i</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-args" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">args</span><span
+            class="method-args">(code)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="args-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 108</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">args</span>(<span class="ruby-identifier">code</span>)
+  <span class="ruby-identifier">one</span>, <span class="ruby-identifier">two</span> = <span class="ruby-value">1</span>, <span class="ruby-value">2</span>
+  <span class="ruby-identifier">code</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">one</span>, <span class="ruby-identifier">two</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-call_block" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">call_block</span><span
+            class="method-args">() { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Ruby Code blocks are chunks of code between braces or</p>
+
+<p>between do- end that you can associate with method invocations</p>
+          
+          
+
+          
+          <div class="method-source-code" id="call_block-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/p022codeblock.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">call_block</span>      
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Start of method&#39;</span>  
+  <span class="ruby-comment"># you can call the block using the yield keyword  </span>
+  <span class="ruby-keyword">yield</span>     
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;End of method&#39;</span>
+  <span class="ruby-keyword">yield</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-callbacks" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">callbacks</span><span
+            class="method-args">(procs)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="callbacks-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 89</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">callbacks</span>(<span class="ruby-identifier">procs</span>)
+  <span class="ruby-identifier">procs</span>[<span class="ruby-value">:starting</span>].<span class="ruby-identifier">call</span>
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;line 91 Still going&quot;</span>
+
+  <span class="ruby-identifier">procs</span>[<span class="ruby-value">:finishing</span>].<span class="ruby-identifier">call</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-generic_return" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generic_return</span><span
+            class="method-args">(code)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="generic_return-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 130</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generic_return</span>(<span class="ruby-identifier">code</span>)
+  <span class="ruby-identifier">code</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;line 131 generic_return method finished.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-greet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">greet</span><span
+            class="method-args">() { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>simple_blocks.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="greet-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/simple_blocks.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">greet</span>
+  <span class="ruby-keyword">yield</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-lambda_return" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">lambda_return</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="lambda_return-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 122</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">lambda_return</span>
+  <span class="ruby-identifier">lambda</span> { <span class="ruby-keyword">return</span> <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;line 122 lambda&quot;</span> }.<span class="ruby-identifier">call</span> <span class="ruby-comment"># lambda will return to the method.</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;line 123 lambda_return method finished.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-leap_year-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">leap_year?</span><span
+            class="method-args">(input_year)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>p017leapyearmtd.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="leap_year-3F-source">
+            <pre><span class="ruby-comment"># File Simple_Constructs/p017leapyearmtd.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">leap_year?</span>(<span class="ruby-identifier">input_year</span>)
+  ((<span class="ruby-identifier">input_year</span> <span class="ruby-operator">%</span> <span class="ruby-value">4</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)  <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">input_year</span> <span class="ruby-operator">%</span> <span class="ruby-value">100</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)) <span class="ruby-operator">||</span> (<span class="ruby-identifier">input_year</span> <span class="ruby-operator">%</span> <span class="ruby-value">400</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-myblock_function" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">myblock_function</span><span
+            class="method-args">() { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The Book of Ruby - <a
+href="http://www.sapphiresteel.com">www.sapphiresteel.com</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="myblock_function-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/6blocks.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">myblock_function</span>()
+        <span class="ruby-keyword">yield</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-proc_return" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">proc_return</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>args(lambda{|a, b, c| puts “Give me a #{a} and a #{b} and a #{c.class}”})</p>
+          
+          
+
+          
+          <div class="method-source-code" id="proc_return-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 117</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">proc_return</span>
+  <span class="ruby-constant">Proc</span>.<span class="ruby-identifier">new</span> { <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;line 117 Proc.new&quot;</span>}.<span class="ruby-identifier">call</span> <span class="ruby-comment"># Proc does not return to the method but from itself..</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;line 118 proc_return method finished.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-say_goodnight" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">say_goodnight</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>p013expint.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="say_goodnight-source">
+            <pre><span class="ruby-comment"># File More_On_Strings/p013expint.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">say_goodnight</span>(<span class="ruby-identifier">name</span>)  
+  <span class="ruby-identifier">result</span> = <span class="ruby-node">&quot;Good night, #{name}&quot;</span>  
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-say_goodnight2" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">say_goodnight2</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>modified program</p>
+          
+          
+
+          
+          <div class="method-source-code" id="say_goodnight2-source">
+            <pre><span class="ruby-comment"># File More_On_Strings/p013expint.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">say_goodnight2</span>(<span class="ruby-identifier">name</span>)  
+  <span class="ruby-node">&quot;Good night, #{name}&quot;</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-square" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">square</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="square-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 154</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">square</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">n</span> <span class="ruby-operator">**</span> <span class="ruby-value">2</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-try" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">try</span><span
+            class="method-args">() { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>try_block.rb</p>
+          
+          
+
+          
+          <div class="method-source-code" id="try-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/try_block.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">try</span>  
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>  
+    <span class="ruby-keyword">yield</span>  
+  <span class="ruby-keyword">else</span>  
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;no block&quot;</span>  
+  <span class="ruby-keyword">end</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-verbose_greet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">verbose_greet</span><span
+            class="method-args">(name) { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="verbose_greet-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/simple_blocks.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">verbose_greet</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-keyword">yield</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-what_am_i" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">what_am_i</span><span
+            class="method-args">(&block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="what_am_i-source">
+            <pre><span class="ruby-comment"># File Ruby_Blocks/closures01.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">what_am_i</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">block</span>.<span class="ruby-identifier">class</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

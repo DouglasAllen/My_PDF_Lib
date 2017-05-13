@@ -1,0 +1,14 @@
+file1.txt
+file2.txt
+inventory.rb
+new-inventory.txt
+old-inventory.txt
+p026zdeafgm2.rb
+p028swapcontents.rb
+rlcr_w04_ex01.rb
+rlcr_w04_ex01a.rb
+rlcr_w04_ex02.rb
+rlcr_w04_ex03.rb
+rlcr_w04_ex04.rb
+rlcr_w04_ex05.rb
+week_04

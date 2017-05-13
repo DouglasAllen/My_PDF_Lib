@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>week_05 - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./file1.html">file1</a>
+  
+    <li><a href="./file1_tmp.html">file1.tmp</a>
+  
+    <li><a href="./file1_txt.html">file1</a>
+  
+    <li><a href="./file2.html">file2</a>
+  
+    <li><a href="./file2_txt.html">file2</a>
+  
+    <li><a href="./game_sav.html">game.sav</a>
+  
+    <li><a href="./logfile_log.html">logfile.log</a>
+  
+    <li><a href="./new-inventory_txt.html">new-inventory</a>
+  
+    <li><a href="./old-inventory_txt.html">old-inventory</a>
+  
+    <li><a href="./oliver_txt.html">oliver</a>
+  
+    <li><a href="./parallel_track_txt.html">parallel_track</a>
+  
+    <li><a href="./plain_text_txt.html">plain_text</a>
+  
+    <li><a href="./plain_text2_txt.html">plain_text2</a>
+  
+    <li><a href="./testfile.html">testfile</a>
+  
+    <li><a href="./text_txt.html">text</a>
+  
+    <li><a href="./week_01_txt.html">week_01</a>
+  
+    <li><a href="./week_02_txt.html">week_02</a>
+  
+    <li><a href="./week_03_txt.html">week_03</a>
+  
+    <li><a href="./week_04_txt.html">week_04</a>
+  
+    <li><a href="./week_05_txt.html">week_05</a>
+  
+    <li><a href="./week_06_txt.html">week_06</a>
+  
+    <li><a href="./week_07_txt.html">week_07</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page week_05.txt">
+
+<p>Try and write your code with whatever Ruby we have learned so far.</p>
+
+<p>Exercise1. Write a class <a
+href="UnpredictableString.html">UnpredictableString</a> which is a
+sub-class of <a href="String.html">String</a>.  This sub-class should have
+a method called scramble() which randomly rearranges any string as follows:</p>
+
+<p>&gt;ruby unpredictablestring.rb daano.r n sdt a htIsw taikmgy r &gt;Exit
+code: 0 # the original string was: “It was a dark and stormy night.”</p>
+
+<p>Exercise2. This exercise thanks to Kathy Sierra.  Once upon a time in a
+software shop, two programmers were given the same spec and told to “build
+it”.  The Really Annoying Project Manager forced the two coders to compete,
+by promising that whoever delivers first gets one of those cool Aeron
+chairs all the Silicon Valley guys have.  The spec. There will be shapes on
+a GUI, a square, a circle and a triangle.  When the user clicks on a shape,
+the shape will rotate clockwise 360 degrees (ie. all the way around)  and
+play an AIF sound file specific to that particular shape.  Go for it guys
+and show me your code.</p>
+
+<p>Note: This exercise is about inheritance, method overriding and method
+overloading not about UI.</p>
+
+<p>Exercise3: Here are the program specifications for a simple game to be
+played against the computer.</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>This game is played at the command-line.</p>
+</li><li>
+<p>The game starts when the computer selects three consecutive cells in a 7
+cell row (from 0 to 6).  When that&#39;s complete, the game asks for your
+first guess.</p>
+</li><li>
+<p>Guess the computer&#39;s selected cells in the smallest number of guesses. 
+You are given a rating or level, based on how well you perform.</p>
+</li><li>
+<p>At the command line, the user types in a number from 0 to 6.  The computer
+checks if it&#39;s one of the selected cells.  If it&#39;s a hit, increment
+the no_of_hits variable.  In response to your guess, you&#39;ll see a
+result at the command-line: either “Hit”, “Miss” or “End”.</p>
+</li><li>
+<p>When you have guessed all three cells, the game ends by printing out your
+rating (your number of guesses).</p>
+</li></ol>
+
+<p>Note:</p>
+<ol style="list-style-type: lower-alpha"><li>
+<p>Use only the features we have learned so far, in Ruby.</p>
+</li><li>
+<p>You must design the <a href="GameBoard.html">GameBoard</a> class.</p>
+</li><li>
+<p>The testgameboard.rb program uses your <a
+href="GameBoard.html">GameBoard</a> class</p>
+</li></ol>
+
+<pre class="ruby"><span class="ruby-comment"># testgameboard.rb</span>
+</pre>
+
+<p>require &#39;gameboard&#39;</p>
+
+<p># track how many guesses the user makes no_of_guesses = 0</p>
+
+<p># instantiate a <a href="GameBoard.html">GameBoard</a> object gb =
+GameBoard.new</p>
+
+<p># make a random number for the first cell, # and use it to make the cell
+locations array random_no = rand(5) # make an array for the location of the
+3 # consecutive ints out of a possible 7 locations = [random_no,
+random_no+1, random_no+2]</p>
+
+<p># invoke the setter method of the <a href="GameBoard.html">GameBoard</a>
+gb.set_locations_cells(locations)</p>
+
+<p># variable to track if the game is alive is_alive = true</p>
+
+<p>while is_alive puts &#39;Enter a number: &#39; STDOUT.flush user_guess =
+gets.chomp # invoke the check_yourself method on the <a
+href="GameBoard.html">GameBoard</a> object result =
+gb.check_yourself(user_guess) no_of_guesses += 1 if (result ==
+&#39;kill&#39;) is_alive = false puts “You took #{no_of_guesses} guesses”
+end end</p>
+
+<p>Discuss these exercises in the Week 5 forum.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
