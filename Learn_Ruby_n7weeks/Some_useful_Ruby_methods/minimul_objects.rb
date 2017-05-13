@@ -1,0 +1,2 @@
+include ObjectSpace
+puts count_objects
