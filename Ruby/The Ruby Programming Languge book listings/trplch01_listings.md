@@ -17,41 +17,41 @@ nil.class    # => NilClass
 #### 1.1.2 Blocks and Iterators
 
 ```ruby
-3.times { print "Ruby! " }    # Prints "Ruby! Ruby! Ruby! "
-1.upto(9) {|x| print x }      # Prints "123456789"
+3.times { print "Ruby! " }     # Prints "Ruby! Ruby! Ruby! "
+1.upto(9) { |x| print x }      # Prints "123456789"
 
-a = [3, 2, 1]                 # This is an array literal
-a[3] = a[2] - 1               # Use square brackets to query and set array elements
-a.each do |elt|               # each is an iterator. The block has a parameter elt
-  print elt+1                 # Prints "4321"
-end                           # This block was delimited with do/end instead of {}
+a = [3, 2, 1]                  # This is an array literal
+a[3] = a[2] - 1                # Use square brackets to query and set array elements
+a.each do |elt|                # each is an iterator. The block has a parameter elt
+  print elt + 1                # Prints "4321"
+end                            # This block was delimited with do/end instead of {}
 
-a = [1,2,3,4]                 # Start with an array
-b = a.map {|x| x*x }          # Square elements: b is [1,4,9,16]
-c = a.select {|x| x%2==0 }    # Select even elements: c is [2,4]
-a.inject do |sum,x|           # Compute the sum of the elements => 10
+a = [1, 2, 3, 4]               # Start with an array
+b = a.map { |x| x*x }          # Square elements: b is [1,4,9,16]
+c = a.select { |x| x % 2 ==0 } # Select even elements: c is [2,4]
+a.inject do |sum,x|            # Compute the sum of the elements => 10
   sum + x
 end
 
-h = {                         # A hash that maps number names to digits
-  :one => 1,                  # The "arrows" show mappings: key=>value
-  :two => 2                   # The colons indicate Symbol literals
+h = {                          # A hash that maps number names to digits
+  one: 1,                      # The "arrows" show mappings: key=>value
+  two: 2                       # The colons indicate Symbol literals
 }
-h[:one]                       # => 1.  Access a value by key
-h[:three] = 3                 # Add a new key/value pair to the hash
-h.each do |key,value|         # Iterate through the key/value pairs
-  print "#{value}:#{key}; "   # Note variables substituted into string
-end                           # Prints "1:one; 2:two; 3:three; "
+h[:one]                        # => 1.  Access a value by key
+h[:three] = 3                  # Add a new key/value pair to the hash
+h.each do |key,value|          # Iterate through the key/value pairs
+  print "#{value}:#{key}; "    # Note variables substituted into string
+end                            # Prints "1:one; 2:two; 3:three; "
 
-File.open("data.txt") do |f|  # Open named file and pass stream to block
-  line = f.readline           # Use the stream to read from the file
-end                           # Stream automatically closed at block end
+File.open("data.txt") do |f|   # Open named file and pass stream to block
+  line = f.readline            # Use the stream to read from the file
+end                            # Stream automatically closed at block end
 
-t = Thread.new do             # Run this block in a new thread
-  File.read("data.txt")       # Read a file in the background
-end                           # File contents available as thread value
+t = Thread.new do              # Run this block in a new thread
+  File.read("data.txt")        # Read a file in the background
+end                            # File contents available as thread value
 
-print "#{value}:#{key}; "     # Note variables substituted into string
+print "#{value}:#{key}; "      # Note variables substituted into string
 ```
 
 #### 1.1.3 Expressions and Operators in Ruby
@@ -73,11 +73,11 @@ max = x > y ? x : y      # The conditional operator
 
 ```ruby
 def square(x)       # Define a method named square with one parameter x
-  x*x               # Return x squared
+  x * x             # Return x squared
 end                 # End of the method
 
 def Math.square(x)  # Define a class method of the Math module
-  x*x
+  x * x
 end
 ```
 
@@ -86,25 +86,25 @@ end
 ```ruby
 x = 1
 
-x += 1           # Increment x: note Ruby does not have ++.
-y -= 1           # Decrement y: no -- operator, either.
+x += 1               # Increment x: note Ruby does not have ++.
+y -= 1               # Decrement y: no -- operator, either.
 
-x, y = 1, 2      # Same as x = 1; y = 2
-a, b = b, a      # Swap the value of two variables
-x,y,z = [1,2,3]  # Array elements automatically assigned to variables
+x, y = 1, 2          # Same as x = 1; y = 2
+a, b = b, a          # Swap the value of two variables
+x, y, z = [1, 2, 3]  # Array elements automatically assigned to variables
 
 # Define a method to convert Cartesian (x,y) coordinates to Polar
-def polar(x,y)
-  theta = Math.atan2(y,x)   # Compute the angle
-  r = Math.hypot(x,y)       # Compute the distance
-  [r, theta]                # The last expression is the return value
+def polar(x, y)
+  theta = Math.atan2(y, x)   # Compute the angle
+  r = Math.hypot(x, y)       # Compute the distance
+  [r, theta]                 # The last expression is the return value
 end
 
 # Here's how we use this method with parallel assignment
-distance, angle = polar(2,2)
+distance, angle = polar(2, 2)
 
-o.x=(1)         # Normal method invocation syntax
-o.x = 1         # Method invocation through assignment
+o.x = (1)         # Normal method invocation syntax
+o.x = 1           # Method invocation through assignment
 ```
 
 #### 1.1.7 Regexp and Range
